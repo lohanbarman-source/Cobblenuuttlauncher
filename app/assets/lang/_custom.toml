@@ -1,0 +1,19 @@
+# Custom Language File for Launcher Customizer
+
+[ejs.app]
+title = "CobbleNuutt Launcher"
+
+[ejs.landing]
+mediaGitHubURL = "https://nuutt-cobblemon.com"
+mediaInstagramURL = "https://www.instagram.com/cobblenuutt"
+mediaTikTokURL = "https://www.tiktok.com/@cobblenuutt"
+mediaDiscordURL = "https://discord.gg/npfsQfpYp8"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/Deltaartsstudio/cobblenuuttLauncher"
+supportLink = "https://discord.gg/npfsQfpYp8"
+
+[ejs.welcome]
+welcomeHeader = "BIENVENUE SUR COBBENUUTT"
+welcomeDescription = "Bienvenue sur CobbleNuutt Launcher ! Préparez-vous à vivre une aventure Minecraft unique. Notre serveur vous offre une expérience de jeu personnalisée avec des mods soigneusement sélectionnés pour améliorer votre gameplay. Rejoignez notre communauté et explorez un monde où l'aventure ne fait que commencer !"
+welcomeDescCTA = "Vous n'êtes qu'à quelques clics de l'aventure."

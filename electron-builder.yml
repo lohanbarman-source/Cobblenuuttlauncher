@@ -1,0 +1,62 @@
+appId: 'cobblenuuttlauncher'
+productName: 'CobbleNuutt Launcher'
+artifactName: 'CobbleNuutt-Launcher-setup-${version}.${ext}'
+
+copyright: 'Copyright © 2018-2024 Daniel Scalzi, 2024 Delta Arts'
+
+asar: true
+compression: 'maximum'
+
+files:
+  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+
+extraResources:
+  - 'libraries'
+
+# Windows Configuration
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  signAndEditExecutable: true
+  signingHashAlgorithms:
+    - sha256
+  timeStampServer: "http://timestamp.sectigo.com"
+
+# Windows Installer Configuration
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+
+# macOS Configuration
+mac:
+  target:
+    - target: 'dmg'
+      arch:
+        - 'x64'
+        - 'arm64'
+  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
+  category: 'public.app-category.games'
+
+# Linux Configuration
+linux:
+  target: 'AppImage'
+  maintainer: 'Delta Arts'
+  vendor: 'Delta Arts'
+  synopsis: 'CobbleNuutt Minecraft Launcher'
+  description: 'Launcher personnalisé pour rejoindre le serveur CobbleNuutt. Tous les mods, configurations et mises à jour sont gérés automatiquement. Based on Helios Launcher by Daniel Scalzi.'
+  category: 'Game'
+
+
+directories:
+  buildResources: 'build'
+  output: 'dist'
+
+# Publication sur GitHub
+publish:
+  provider: 'github'
+  owner: 'Deltaartsstudio'
+  repo: 'cobblenuuttLauncher'
