@@ -1,0 +1,268 @@
+{
+  "defaultShop": [
+    {
+      "Poké Balls": [
+        {
+          "item": "cobblemon:ancient_poke_ball",
+          "price": 200
+        },
+        {
+          "item": "cobblemon:ancient_great_ball",
+          "price": 600
+        },
+        {
+          "item": "cobblemon:ancient_ultra_ball",
+          "price": 800
+        },
+        {
+          "item": "cobblemon:premier_ball",
+          "price": 200
+        },
+        {
+          "item": "cobblemon:love_ball",
+          "price": 800
+        },
+        {
+          "item": "cobblemon:friend_ball",
+          "price": 800
+        },
+        {
+          "item": "cobblemon:quick_ball",
+          "price": 1000
+        },
+        {
+          "item": "cobblemon:master_ball",
+          "price": 1000000
+        }
+      ]
+    },
+    {
+      "Healing": [
+        {
+          "item": "cobblemon:healing_potion",
+          "price": 100
+        },
+        {
+          "item": "cobblemon:super_healing_potion",
+          "price": 200
+        },
+        {
+          "item": "cobblemon:hyper_healing_potion",
+          "price": 500
+        },
+        {
+          "item": "cobblemon:revive",
+          "price": 250
+        },
+        {
+          "item": "cobblemon:revive_max",
+          "price": 500
+        },
+        {
+          "item": "cobblemon:max_ether",
+          "price": 850
+        },
+        {
+          "item": "cobblemon:max_elixir",
+          "price": 1250
+        },
+        {
+          "item": "cobblemon:max_potion",
+          "price": 1850
+        },
+        {
+          "item": "cobblemon:full_restore",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "Exp": [
+        {
+          "item": "cobblemon:exp_candy_xs",
+          "price": 250
+        },
+        {
+          "item": "cobblemon:exp_candy_s",
+          "price": 750
+        },
+        {
+          "item": "cobblemon:exp_candy_m",
+          "price": 2000
+        },
+        {
+          "item": "cobblemon:exp_candy_l",
+          "price": 2500
+        },
+        {
+          "item": "cobblemon:exp_candy_xl",
+          "price": 5000
+        },
+        {
+          "item": "cobblemon:rare_candy",
+          "price": 3500
+        },
+        {
+          "item": "cobblemon:exp_share",
+          "price": 5000
+        }
+      ]
+    },
+    {
+      "Blocs": [
+        {
+          "item": "minecraft:cobblestone",
+          "price": 10
+        },
+        {
+          "item": "minecraft:oak_log",
+          "price": 10
+        },
+        {
+          "item": "minecraft:dirt",
+          "price": 10
+        },
+        {
+          "item": "minecraft:sand",
+          "price": 20
+        },
+        {
+          "item": "minecraft:quartz_block",
+          "price": 25
+        },
+        {
+          "item": "minecraft:shroomlight",
+          "price": 50
+        },
+        {
+          "item": "minecraft:ochre_froglight",
+          "price": 500
+        },
+        {
+          "item": "minecraft:pearlescent_froglight",
+          "price": 500
+        },
+        {
+          "item": "minecraft:verdant_froglight",
+          "price": 500
+        },
+        {
+          "item": "minecraft:ink_sac",
+          "price": 500
+        },
+        {
+          "item": "minecraft:glow_ink_sac",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "Dresseurs": [
+        {
+          "item": "cobblemon:pokedex_red",
+          "price": 5000
+        },
+        {
+          "item": "cobblenav:pokenav_item_base",
+          "price": 25000
+        },
+        {
+          "item": "cobblenav:pokefinder_item_black",
+          "price": 5000
+        },
+        {
+          "item": "waystones:waystone",
+          "price": 15000
+        },
+         {
+          "item": "minecraft:nether_star",
+          "price": 250000
+        },
+        {
+          "item": "cloudboots:cloud_boots",
+          "price": 500000
+        },
+        {
+          "item": "cloudboots:netherite_cloud_boots",
+          "price": 1500000
+        },
+        {
+          "item": "cobblemonrepel:repel",
+          "price": 25000
+        },
+        {
+          "item": "cobblemonrepel:super_repel",
+          "price": 50000
+        },
+        {
+          "item": "cobblemonrepel:max_repel",
+          "price": 150000
+        }
+      ]
+    },
+    {
+      "IV Booster": [
+        {
+          "item": "cobblemon_utility:voidcap",
+          "price": 250000
+        },
+        {
+          "item": "cobblemon_utility:ballsynchronizer",
+          "price": 250000
+        },
+        {
+          "item": "cobblemon_utility:transmutationorb",
+          "price": 1500000
+        }
+      ]
+    },
+    {
+      "Agriculture": [
+        {
+          "item": "minecraft:wheat_seeds",
+          "price": 5000
+        },
+        {
+          "item": "minecraft:beetroot_seeds",
+          "price": 5000
+        },
+        {
+          "item": "minecraft:melon_seeds",
+          "price": 5000
+        },
+        {
+          "item": "minecraft:pumpkin_seeds",
+          "price": 5000
+        },
+        {
+          "item": "minecraft:potato",
+          "price": 10000
+        },
+        {
+          "item": "minecraft:carrot",
+          "price": 10000
+        }
+      ]
+    },
+    {
+      "Minerais": [
+        {
+          "item": "minecraft:redstone",
+          "price": 500
+        },
+        {
+          "item": "minecraft:iron_ingot",
+          "price": 1000
+        },
+        {
+          "item": "minecraft:gold_ingot",
+          "price": 1200
+        },
+        {
+          "item": "minecraft:diamond",
+          "price": 4000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---@meta
+--- Represents an event that occurs after a player respawns, providing access to both the pre- and post-respawn player entities.
+--- This event cannot be canceled.
+---
+--- ### Example
+--- ```lua
+--- local respawnQueue = spell:collect("AfterPlayerRespawnEvent")
+--- while true do
+---     local evt = respawnQueue:next()
+---     --- @cast evt AfterPlayerRespawnEvent
+---     local oldP = evt.oldPlayer
+---     local newP = evt.newPlayer
+---
+---     -- Teleport the new player to the world spawn point
+---     local spawnPos = newP.world.spawnPos
+---     newP:teleport(newP.world, spawnPos)
+---
+---     -- Give 5 seconds of Resistance II for a safe re-entry
+---     spell:executeSilent("effect give " .. newP.name .. " minecraft:resistance 5 1")
+---
+---     -- Let everyone know who just respawned
+---     spell:execute("tellraw @a [\"\",{\"text\":\""
+---         .. newP.name .. " has respawned!\",\"color\":\"gold\"}]")
+--- end
+--- ```
+---@class AfterPlayerRespawnEvent
+---@field name string @Read-Only The name of the event.
+---@field oldPlayer Player @Read-Only A reference to the player entity before the respawn, typically containing the state before death.
+---@field newPlayer Player @Read-Only A reference to the player entity after the respawn, representing the new state.
+---@field alive boolean Indicates whether the player is alive following the respawn (usually true).
+AfterPlayerRespawnEvent = {}

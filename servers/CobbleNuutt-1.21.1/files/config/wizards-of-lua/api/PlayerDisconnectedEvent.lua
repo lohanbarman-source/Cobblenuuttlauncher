@@ -1,0 +1,23 @@
+---@meta
+--- Triggered when a player disconnects from the server.
+--- This event cannot be canceled.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({ "PlayerDisconnectedEvent" }, function(evt) ---@cast evt PlayerDisconnectedEvent
+--- local player = evt.player
+--- for i = 0, 40 do
+---   local item = evt.player.inventory[i] ---@cast evt Item
+---   if item then
+---     player:dropItem(item)
+---   end
+--- end
+--- player.inventory:clear()
+--- end)
+--- 
+--- while true do sleep(20) end
+--- ```
+---@class PlayerDisconnectedEvent
+---@field name string @Read-Only The name of this event.
+---@field player Player @Read-Only A reference to the player who has joined the game.
+PlayerDisconnectedEvent = {}

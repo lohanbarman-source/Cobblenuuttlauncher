@@ -1,0 +1,15 @@
+[00:20:07] [KEY-GIVE] system → Simetaire : 1 × item keys for "shiny"
+[00:20:07] [KEY-GIVE] system → Simetaire : 1 × item keys for "EpicCrate"
+[00:20:07] [KEY-GIVE] system → Simetaire : 1 × item keys for "noctali"
+[00:20:07] [KEY-GIVE] system → Simetaire : 1 × item keys for "vote"
+[00:20:07] [KEY-GIVE] system → Simetaire : 1 × item keys for "evoli"
+[00:46:56] [KEY-GIVE] system → BionykK : 1 × item keys for "shiny"
+[00:46:56] [KEY-GIVE] system → BionykK : 1 × item keys for "EpicCrate"
+[00:46:56] [KEY-GIVE] system → BionykK : 1 × item keys for "noctali"
+[00:46:56] [KEY-GIVE] system → BionykK : 1 × item keys for "vote"
+[00:46:56] [KEY-GIVE] system → BionykK : 1 × item keys for "evoli"
+[00:47:23] [BionykK] opened "vote" → prize="&6Clever Feather ×5" via item key
+[00:47:24] [BionykK] opened "evoli" → prize="&7Iron ×32" via item key
+[00:47:26] [BionykK] opened "noctali" → prize="&bBonbons Exp. XL ×64" via item key
+[12:06:25] [KEY-GIVE] system → BionykK : 1 × item keys for "vote"
+[12:06:28] [BionykK] opened "vote" → prize="&bDevolution Relic" via item key

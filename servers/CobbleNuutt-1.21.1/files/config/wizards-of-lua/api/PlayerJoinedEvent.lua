@@ -1,0 +1,19 @@
+---@meta
+--- Triggered when a new player joins the game.
+--- This event cannot be canceled.
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("PlayerJoinedEvent")
+--- while true do
+---   local evt = queue:next()
+---   local name = evt.player.name
+---   spell:execute(string.format("say Welcome, %s!", name))
+---   local starterItem = Item:new("bread", { count = 3 })
+---   evt.player:setItemInHand("MAIN_HAND", starterItem)
+--- end
+--- ```
+---@class PlayerJoinedEvent
+---@field name string @Read-Only The name of this event.
+---@field player Player @Read-Only A reference to the player who has joined the game.
+PlayerJoinedEvent = {}

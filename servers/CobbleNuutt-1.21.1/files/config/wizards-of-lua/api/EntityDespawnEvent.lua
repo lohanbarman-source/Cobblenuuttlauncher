@@ -1,0 +1,21 @@
+---@meta
+--- Triggered whenever an entity is unloaded from the world.  
+--- This event cannot be canceled.  
+---
+--- When this event is fired, the entity is still valid but will be removed from the world  
+--- immediately after event processing completes.  
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("EntityDespawnEvent")
+--- while true do
+---   local evt = queue:next()
+---   ---@cast evt EntityDespawnEvent
+---   local distance = math.floor((evt.entity.pos - spell.owner.pos):magnitude())
+---   print(evt.name, evt.entity.type.id, distance)
+--- end
+--- ```
+---@class EntityDespawnEvent
+---@field name string @Read-Only The name of the event.
+---@field entity Entity @Read-Only A reference to the entity being unloaded.
+EntityDespawnEvent = {}

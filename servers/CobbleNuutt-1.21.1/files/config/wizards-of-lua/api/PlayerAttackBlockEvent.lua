@@ -1,0 +1,29 @@
+---@meta
+--- Triggered once when a player attacks a block.
+--- Cancel this event to prevent the block from being attacked.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({ "PlayerAttackBlockEvent" }, function(evt)
+---   ---@cast evt PlayerAttackBlockEvent
+---   -- Prevent attacking oak planks from below
+---   if evt.block.type.id == "oak_planks" and evt.face == "down" then
+---     spell:execute("say You can't attack oak planks from below!")
+---     return false  -- Cancel the attack
+---   end
+---   return true  -- Allow the attack
+--- end)
+---
+--- while true do
+---   sleep(20)  -- Keep the spell active
+--- end
+--- ```
+---@class PlayerAttackBlockEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world where the event occurs.
+---@field player Player @Read-Only A reference to the player who attacks the block.
+---@field hand string @Read-Only The hand used to attack: "MAIN_HAND" or "OFF_HAND".
+---@field block Block @Read-Only A copy of the block being attacked.
+---@field pos Vec3 @Read-Only The position of the block being attacked.
+---@field face string @Read-Only The face of the block being attacked: "north", "east", "south", "west", "up", or "down".
+PlayerAttackBlockEvent = {}

@@ -1,0 +1,614 @@
+{
+  "crateID": "vote",
+  "screenName": "&8✨ CAISSE VOTE ✨",
+  "crateName": "&8✨ CAISSE VOTE ✨",
+  "permission": "crate.vote",
+  "openSound": "minecraft:block.chest.open",
+  "rewardSound": "minecraft:entity.player.levelup",
+  "movingItemSound": "minecraft:entity.item.pickup",
+  "particleType": "minecraft:end_rod",
+  "animationType": "default",
+  "animationSteps": 5,
+  "animationInterval": 100,
+  "keyItem": {
+    "isVirtualKey": false,
+    "material": "minecraft:nether_star",
+    "customModelData": 107,
+    "amount": 1,
+    "displayname": "&aClé Vote",
+    "lore": [
+      "Cette clé te permet d'ouvrir &8✨ CAISSE VOTE ✨"
+    ],
+    "enchantEffect": false
+  },
+  "prizes": [
+    {
+      "type": "command",
+      "weight": 42.0,
+      "command": "minecraft:give %player% cobblemon:oran_berry 8",
+      "displayItem": {
+        "material": "cobblemon:oran_berry",
+        "amount": 8,
+        "displayname": "&aBaies Oran ×8",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 30.0,
+      "command": "minecraft:give %player% cobblemon:poke_ball 16",
+      "displayItem": {
+        "material": "cobblemon:poke_ball",
+        "amount": 16,
+        "displayname": "&fPoké Balls ×16",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 28.0,
+      "command": "minecraft:give %player% cobblemon:great_ball 8",
+      "displayItem": {
+        "material": "cobblemon:great_ball",
+        "amount": 8,
+        "displayname": "&9Super Balls ×8",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 17.5,
+      "command": "cd give %player% 300",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+300 CobbleDollars",
+        "lore": [
+          "&7Tu reçois 300 CobbleDollars !",
+          "&eMonnaie utilisable dans la boutique du serveur."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7vient de gagner &a500 CobbleDollars &7dans &d%cratename%&7 !"
+    },
+    {
+      "type": "command",
+      "weight": 20.0,
+      "command": "minecraft:give %player% cobblemon:ultra_ball 4",
+      "displayItem": {
+        "material": "cobblemon:ultra_ball",
+        "amount": 4,
+        "displayname": "&eHyper Balls ×4",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 17.5,
+      "command": "cd give %player% 1000",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+1000 CobbleDollars",
+        "lore": [
+          "&7Tu reçois 1000 CobbleDollars !",
+          "&eMonnaie utilisable dans la boutique du serveur."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7vient de gagner &a500 CobbleDollars &7dans &d%cratename%&7 !"
+    },
+    {
+      "type": "command",
+      "weight": 17.5,
+      "command": "cd give %player% 500",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+500 CobbleDollars",
+        "lore": [
+          "&7Tu reçois 500 CobbleDollars !",
+          "&eMonnaie utilisable dans la boutique du serveur."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7vient de gagner &a500 CobbleDollars &7dans &d%cratename%&7 !"
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "minecraft:give %player% cobblemon:health_feather 5",
+      "displayItem": {
+        "material": "cobblemon:health_feather",
+        "amount": 5,
+        "displayname": "&6Heatlh Feather ×5",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "minecraft:give %player% cobblemon:muscle_feather 5",
+      "displayItem": {
+        "material": "cobblemon:muscle_feather",
+        "amount": 5,
+        "displayname": "&6Muscle Feather ×5",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "minecraft:give %player% cobblemon:resist_feather 5",
+      "displayItem": {
+        "material": "cobblemon:resist_feather",
+        "amount": 5,
+        "displayname": "&6Resist Feather ×5",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "minecraft:give %player% cobblemon:genius_feather 5",
+      "displayItem": {
+        "material": "cobblemon:genius_feather",
+        "amount": 5,
+        "displayname": "&6Genius Feather ×5",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "minecraft:give %player% cobblemon:clever_feather 5",
+      "displayItem": {
+        "material": "cobblemon:clever_feather",
+        "amount": 5,
+        "displayname": "&6Clever Feather ×5",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "minecraft:give %player% cobblemon:swift_feather 5",
+      "displayItem": {
+        "material": "cobblemon:swift_feather",
+        "amount": 5,
+        "displayname": "&6Swift Feather ×5",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 14.0,
+      "command": "minecraft:give %player% cobblemon:exp_candy_m 8",
+      "displayItem": {
+        "material": "cobblemon:exp_candy_m",
+        "amount": 8,
+        "displayname": "&bBonbons Exp. M ×8",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 14.5,
+      "command": "minecraft:give %player% cobblemon_utility:devolutionrelic 1",
+      "displayItem": {
+        "material": "cobblemon_utility:devolutionrelic",
+        "amount": 1,
+        "displayname": "&bDevolution Relic",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 7.0,
+      "command": "minecraft:give %player% cobblemon:exp_candy_xl 2",
+      "displayItem": {
+        "material": "cobblemon:exp_candy_xl",
+        "amount": 2,
+        "displayname": "&bBonbons Exp. XL ×2",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 6.5,
+      "command": "minecraft:give %player% sophisticatedbackpacks:diamond_backpack 1",
+      "displayItem": {
+        "material": "sophisticatedbackpacks:diamond_backpack",
+        "amount": 1,
+        "displayname": "&bSac a dos en diamant ×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 6.0,
+      "command": "minecraft:give %player% gachamachine:gacha_coin 15",
+      "displayItem": {
+        "material": "gachamachine:gacha_coin",
+        "amount": 15,
+        "displayname": "&bGacha coin ×15",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:power_band 1",
+      "displayItem": {
+        "material": "cobblemon:power_band",
+        "amount": 1,
+        "displayname": "&bPower band x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:power_bracer 1",
+      "displayItem": {
+        "material": "cobblemon:power_bracer",
+        "amount": 1,
+        "displayname": "&bPower Bracer x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:power_anklet 1",
+      "displayItem": {
+        "material": "cobblemon:power_anklet",
+        "amount": 1,
+        "displayname": "&bPower Anklet x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:power_belt 1",
+      "displayItem": {
+        "material": "cobblemon:power_belt",
+        "amount": 1,
+        "displayname": "&bPower belt x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:power_weight 1",
+      "displayItem": {
+        "material": "cobblemon:power_weight",
+        "amount": 1,
+        "displayname": "&bPower weight x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:power_lens 1",
+      "displayItem": {
+        "material": "cobblemon:power_lens",
+        "amount": 1,
+        "displayname": "&bPower lens x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.85,
+      "command": "minecraft:give %player% cobblemon:ability_patch 1",
+      "displayItem": {
+        "material": "cobblemon:ability_patch",
+        "amount": 1,
+        "displayname": "&aAbility Patch ×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.775,
+      "command": "crate key give vote 2 %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 2,
+        "displayname": "Clé Vote x2",
+        "lore": [
+          "",
+          ""
+        ],
+        "enchantEffect": true,
+        "customModelData": 107
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.775,
+      "command": "crate key give evoli 1 %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 1,
+        "displayname": "Clé Évoli x1",
+        "lore": [
+          "",
+          ""
+        ],
+        "enchantEffect": true,
+        "customModelData": 105
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:windsong_lyre 1",
+      "displayItem": {
+        "material": "genshinstrument:windsong_lyre",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:vintage_lyre 1",
+      "displayItem": {
+        "material": "genshinstrument:vintage_lyre",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:floral_zither 1",
+      "displayItem": {
+        "material": "genshinstrument:floral_zither",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:glorious_drum 1",
+      "displayItem": {
+        "material": "genshinstrument:glorious_drum",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:nightwind_horn 1",
+      "displayItem": {
+        "material": "genshinstrument:nightwind_horn",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:ukulele 1",
+      "displayItem": {
+        "material": "genshinstrument:ukulele",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 0.4,
+      "command": "minecraft:give %player% genshinstrument:djem_djem_drum 1",
+      "displayItem": {
+        "material": "genshinstrument:djem_djem_drum",
+        "amount": 1,
+        "displayname": "&aInstrument de musique !×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    }
+  ]
+}

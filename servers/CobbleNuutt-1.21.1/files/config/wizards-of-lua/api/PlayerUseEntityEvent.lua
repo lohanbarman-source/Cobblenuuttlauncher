@@ -1,0 +1,41 @@
+---@meta
+--- Represents an event triggered when a player attempts to interact with an entity.
+--- This event can be canceled to prevent the interaction.
+---
+--- This event is normally fired twice for each interaction:
+--- 1. With `hitResult` populated.  Canceling at this stage only prevents the interaction for entities
+---    that handle the hit result (e.g., armor stands).
+--- 2. Without `hitResult`.  Canceling here prevents the interaction for all other entity types.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({ "PlayerUseEntityEvent" }, function(evt)
+---   ---@cast evt PlayerUseEntityEvent
+---   -- First firing: has hitResult
+---   if evt.hitResult then
+---     if evt.entity.type.id == "armor_stand" then
+---       spell:execute("say You can't use an armor stand!")
+---       return false  -- Cancel the interaction for armor stands
+---     end
+---   else
+---     -- Second firing: general interaction
+---     if evt.entity.type.id == "villager" then
+---       spell:execute("say No trading!")
+---       return false  -- Cancel trading with villagers
+---     end
+---     if evt.entity.type.id == "horse" then
+---       spell:execute("say No riding!")
+---       return false  -- Cancel riding horses
+---     end
+---   end
+---   return true  -- Allow the interaction
+--- end)
+--- ```
+---@class PlayerUseEntityEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world in which the event occurs.
+---@field player Player @Read-Only A reference to the player who initiated the interaction.
+---@field hand string @Read-Only The hand used for the interaction: `"MAIN_HAND"` or `"OFF_HAND"`.
+---@field entity Entity @Read-Only A reference to the entity being interacted with.
+---@field hitResult EntityHitResult|nil @Read-Only Details about the interaction if an entity was hit; `nil` on the second firing.
+PlayerUseEntityEvent = {}

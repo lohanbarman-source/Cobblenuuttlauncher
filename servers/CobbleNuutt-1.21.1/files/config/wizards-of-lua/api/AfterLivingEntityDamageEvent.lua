@@ -1,0 +1,30 @@
+---@meta
+--- Triggered right after a living entity took damage.
+--- Not fired if the entity was killed by the damage.
+--- This event cannot be canceled.
+---
+--- ### Example
+--- ```lua
+--- local initPos = spell.pos
+--- local queue = spell:collect("AfterLivingEntityDamageEvent")
+--- while true do
+---   local evt = queue:next()
+---   ---@cast evt AfterLivingEntityDamageEvent
+---   local attacker = evt.damageSource.attacker
+---   if attacker and attacker.type.id == "iron_golem" and evt.entity.type.id ~= "player" then
+---     spell.pos = evt.entity.pos
+---     for i = 1, evt.damageDealt do
+---       spell:executeSilent("/summon minecraft:experience_orb ~ ~1 ~")
+---     end
+---   end
+---   spell.pos = initPos
+--- end
+--- ```
+---@class AfterLivingEntityDamageEvent
+---@field name string @Read-Only The name of the event.
+---@field entity Entity @Read-Only A reference to the entity that took damage.
+---@field damageSource DamageSource @Read-Only The source of the damage.
+---@field damageDealt number @Read-Only The damage that has been dealt.
+---@field damageTaken number @Read-Only The actual damage taken by the entity, before armor and enchantment effects.
+---@field blocked boolean @Read-Only Indicates whether the damage was blocked by a shield.
+AfterLivingEntityDamageEvent = {}

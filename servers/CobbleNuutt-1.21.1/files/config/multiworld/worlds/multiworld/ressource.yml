@@ -1,0 +1,9 @@
+namespace: multiworld
+path: ressource
+environment: NORMAL
+seed: -191955333
+spawnpos: 105553113894982
+gamerules: 
+gamerule_keepInventory: true
+gamerule_fallDamage: true
+gamerule_doFireTick: false

@@ -1,0 +1,21 @@
+---@meta
+--- Triggered when a player uses an item in the game.
+--- This event can be canceled to prevent the item from being used.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({"PlayerUseItemEvent"}, function(evt)
+---   if evt.item.type.id == "ender_pearl" then
+---     spell:execute("say No teleporting!")
+---     return false  -- Cancel the item use
+---   end
+---   return true  -- Allow normal item usage
+--- end)
+--- ```
+---@class PlayerUseItemEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world in which the event occurs.
+---@field player Player @Read-Only A reference to the player who triggered the event.
+---@field hand string @Read-Only The hand used to activate the item, either "MAIN_HAND" or "OFF_HAND".
+---@field item Item @Read-Only A reference to the item being used during the event.
+PlayerUseItemEvent = {}

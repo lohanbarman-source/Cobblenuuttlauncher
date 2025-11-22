@@ -1,0 +1,26 @@
+---@meta
+--- Triggered right before a living entity is about to take damage.
+--- This event can be canceled to prevent the entity from taking damage.
+---
+--- ### Example
+--- ```lua
+--- local initPos = spell.pos
+--- spell:intercept({ "BeforeLivingEntityDamageEvent" }, function(evt) ---@cast evt BeforeLivingEntityDamageEvent
+---   local attacker = evt.damageSource.attacker
+---   if attacker and attacker.type.id == "zombie" and evt.entity.type.id == "villager" then
+---     spell.pos = evt.entity.pos
+---     spell:executeSilent("/particle minecraft:angry_villager ~ ~1 ~ 0.3 0.3 0.3 1 2 force")
+---     spell.pos = initPos
+---     return false -- Cancel the event
+---   end
+---   return true -- Allow damage to proceed
+--- end)
+---
+--- while true do sleep(20) end -- Keep the spell active
+--- ```
+---@class BeforeLivingEntityDamageEvent
+---@field name string @Read-Only The name of the event.
+---@field entity Entity @Read-Only A reference to the entity that is about to take damage.
+---@field damageSource DamageSource @Read-Only The source of the damage.
+---@field damage number @Read-Only The damage that will be dealt.
+BeforeLivingEntityDamageEvent = {}

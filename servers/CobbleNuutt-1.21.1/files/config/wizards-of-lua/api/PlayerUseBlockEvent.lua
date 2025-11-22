@@ -1,0 +1,23 @@
+---@meta
+--- Triggered when a player interacts with a block using their hand.
+--- This event can be canceled to prevent the block interaction from happening.
+--- It may be triggered twice, once for each hand.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({"PlayerUseBlockEvent"}, function(evt)
+---   spell.pos = evt.hitResult.blockPos
+---   if spell.block.type.id == "crafting_table" then
+---     spell:execute("say You cannot use crafting tables here!")
+---     return false  -- Cancel the block interaction
+---   end
+---   return true  -- Allow normal interaction
+--- end)
+--- ```
+---@class PlayerUseBlockEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world where the event occurs.
+---@field player Player @Read-Only A reference to the player who triggered the event.
+---@field hand string @Read-Only The hand used to interact, either "MAIN_HAND" or "OFF_HAND".
+---@field hitResult BlockHitResult @Read-Only Details about the block interaction, including the position and side of the block that the player interacted with.
+PlayerUseBlockEvent = {}

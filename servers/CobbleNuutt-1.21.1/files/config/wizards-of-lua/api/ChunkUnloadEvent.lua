@@ -1,0 +1,22 @@
+---@meta
+--- Triggered whenever a chunk is unloaded from memory.
+--- This event cannot be canceled.
+---
+--- When this event is fired, the chunk is still valid but will be removed from the world
+--- immediately after the event processing completes.
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("ChunkUnloadEvent")
+--- while true do
+---     local evt = queue:next()
+---     ---@cast evt ChunkUnloadEvent
+---     print("Chunk " .. evt.chunkX .. ", " .. evt.chunkZ .. " unloaded.")
+--- end
+--- ```
+---@class ChunkUnloadEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world where the chunk is being unloaded.
+---@field chunkX number @Read-Only The x-coordinate of the unloaded chunk (in chunk space).
+---@field chunkZ number @Read-Only The z-coordinate of the unloaded chunk (in chunk space).
+ChunkUnloadEvent = {}

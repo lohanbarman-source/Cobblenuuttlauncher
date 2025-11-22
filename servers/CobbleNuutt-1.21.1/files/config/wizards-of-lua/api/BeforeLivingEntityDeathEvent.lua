@@ -1,0 +1,24 @@
+---@meta
+--- Represents an event triggered right before a living entity dies, giving access to the entity and the cause of death.
+--- This event can be canceled to prevent the entity from dying.
+---
+--- **Note:** In vanilla Minecraft, death occurs when `entity.health <= 0` is detected each tick.
+--- Canceling this event alone does not prevent the death — the interceptor is expected to take action (e.g., restore health).
+---
+--- ### Example
+--- ```lua
+--- local i = spell:intercept({"BeforeLivingEntityDeathEvent"}, function(evt)
+---   if evt.entity.type.id == "zombie" then
+---     evt.entity.health = 1  -- Prevents death by restoring health
+---     return false           -- Cancel the death event
+---   end
+---   return true              -- Allow death to proceed
+--- end)
+---
+--- while true do sleep(20) end  -- Keep the spell active
+--- ```
+---@class BeforeLivingEntityDeathEvent
+---@field name string @Read-Only The name of the event.
+---@field entity Entity @Read-Only A reference to the entity that is about to die.
+---@field damageSource DamageSource @Read-Only The source of the damage that led to the entity’s death.
+BeforeLivingEntityDeathEvent = {}

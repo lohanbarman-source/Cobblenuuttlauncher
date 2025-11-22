@@ -1,0 +1,22 @@
+---@meta
+--- Triggered when a player attacks an entity.
+--- This event can be canceled to prevent the attack.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({"PlayerAttackEntityEvent"}, function(evt)
+---   ---@cast evt PlayerAttackEntityEvent
+---   if evt.entity.type.id == "pig" then
+---     spell:execute("say Don't hurt the pigs!")
+---     return false -- Cancel the attack
+---   end
+---   return true -- Allow the attack
+--- end)
+--- ```
+---@class PlayerAttackEntityEvent
+---@field name string @Read-Only The name of this event.
+---@field player Player @Read-Only A reference to the player who is attacking the entity.
+---@field world World @Read-Only A reference to the world where this event occurs.
+---@field hand string @Read-Only The hand used to attack, either `"MAIN_HAND"` or `"OFF_HAND"`.
+---@field entity Entity @Read-Only A reference to the entity that is being attacked.
+PlayerAttackEntityEvent = {}

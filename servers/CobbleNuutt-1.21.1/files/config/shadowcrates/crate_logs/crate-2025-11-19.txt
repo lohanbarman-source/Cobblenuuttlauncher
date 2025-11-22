@@ -1,0 +1,7 @@
+[23:50:06] [KEY-GIVE] system → Doy000 : 1 × item keys for "evoli"
+[23:52:22] [KEY-GIVE] system → Doy000 : 1 × item keys for "evoli"
+[23:55:48] [KEY-GIVE] system → Doy000 : 1 × item keys for "noctali"
+[23:55:58] [Doy000] opened "evoli" → prize="&6Item changement de forme x1" via item key
+[23:56:00] [Doy000] opened "evoli" → prize="&aCarbos ×32" via item key
+[23:56:02] [Doy000] opened "noctali" → prize="&dCandy Niv. 100 ×1" via item key
+[23:56:20] [KEY-GIVE] system → Doy000 : 1 × item keys for "shiny"

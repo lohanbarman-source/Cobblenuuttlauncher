@@ -1,0 +1,111 @@
+{
+  "title": "§3Gts",
+  "itemListingsTitle": "§3Gts - Objets",
+  "pokemonListingsTitle": "§3Gts - Pokémon",
+  "expiredListingsTitle": "§3Gts - Expirés",
+  "pokemonTitle": "§3Gts - Pokémon",
+  "itemTitle": "§3Gts - Objet",
+  "filteredListingsTitle": "§3Gts - %search%",
+  "historyTitle": "§3Gts - Historique",
+  "manageTitle": "§3Gts - Gestion",
+  "purchaseMessageBuyer": "§2Vous avez acheté {listing} à {seller} !",
+  "cancelListing": "§6L'annonce {listing} a été annulée !",
+  "returnListingSuccess": "§2Vous avez récupéré l'annonce {listing} !",
+  "returnListingFail": "§cImpossible de récupérer l'annonce {listing}.",
+  "maximumListings": "§cVous ne pouvez avoir qu’un total de {max_listings} annonces.",
+  "minimumListingPrice": "§cVotre annonce doit atteindre le prix minimum de {min_price}",
+  "maximumListingPrice": "§cVotre annonce doit être inférieure au prix maximum de {max_price}",
+  "listingSuccess": "§2Votre {listing} a été ajouté avec succès au GTS !",
+  "listingFail": "§cÉchec de l’ajout de votre {listing} au GTS !",
+  "noPokemonInSlot": "§cAucun Pokémon trouvé dans l’emplacement indiqué !",
+  "noItemInHand": "§cAucun objet trouvé dans votre main !",
+  "bannedItem": "§c{listing} est interdit sur le GTS !",
+  "bannedPokemon": "§c{listing} est interdit sur le GTS !",
+  "insufficientItems": "§cVous n’avez pas assez de {listing} dans votre inventaire pour créer cette annonce !",
+  "itemIdNotFound": "§cImpossible de trouver cet objet !",
+  "zeroItemAmount": "§cLa quantité mise en vente ne peut pas être zéro !",
+  "reloadMessage": "§2Configurations rechargées !",
+  "insufficientFunds": "§cVous n’avez pas assez d’argent pour acheter cette annonce !",
+  "listingBought": "§2Votre {listing} a été acheté par {buyer}",
+  "newListingBroadcast": "§e{seller} §2vient d’ajouter §e{listing} §2au GTS.",
+  "insufficientInventorySpace": "§cVous n’avez pas assez de place dans votre inventaire pour recevoir cette annonce.",
+  "onlyOnePokemonInParty": "§cVous ne pouvez pas vendre un Pokémon si vous n’en avez qu’un seul dans votre équipe.",
+  "confirmPurchaseButtonLabel": "§2Confirmer l’achat",
+  "cancelPurchaseButtonLabel": "§cAnnuler l’achat",
+  "removeListingButtonLabel": "§6Retirer l’annonce",
+  "itemListingsButtonLabel": "§9Voir les objets",
+  "pokemonListingsButtonLabel": "§9Voir les Pokémon",
+  "manageListingsButtonLabel": "§dGérer mes annonces",
+  "nextPageButtonLabel": "§7Page suivante",
+  "previousPageButtonLabel": "§7Page précédente",
+  "sortByPriceButtonLabel": "§eTrier par prix",
+  "sortByNewestButtonLabel": "§3Trier par nouveauté",
+  "sortByPokemonButtonLabel": "§6Trier par Pokémon",
+  "sortByNameButtonLabel": "§6Trier par nom",
+  "receiveListingButtonLabel": "§2Récupérer l’annonce",
+  "relistExpiredButtonLabel": "§9Remettre en vente",
+  "expiredListingButtonLabel": "§cAnnonces expirées",
+  "pokemonBall": "§2Ball : ",
+  "itemListingsButtonItem": {
+    "id": "cobblemon:assault_vest",
+    "count": 1
+  },
+  "pokemonListingsButtonItem": {
+    "id": "cobblemon:poke_ball",
+    "count": 1
+  },
+  "manageListingsButtonItem": {
+    "id": "cobblemon:sachet",
+    "count": 1
+  },
+  "expiredListingsButtonItem": {
+    "id": "cobblemon:link_cable",
+    "count": 1
+  },
+  "nextPageButtonItems": {
+    "id": "minecraft:arrow",
+    "count": 1
+  },
+  "previousPageButtonItems": {
+    "id": "cobblemon:poison_barb",
+    "count": 1
+  },
+  "fillerItem": {
+    "id": "minecraft:white_stained_glass_pane",
+    "count": 1
+  },
+  "purchaseButtonItem": {
+    "id": "minecraft:green_stained_glass_pane",
+    "count": 1
+  },
+  "cancelButtonItem": {
+    "id": "minecraft:red_stained_glass_pane",
+    "count": 1
+  },
+  "removeListingButtonItem": {
+    "id": "minecraft:orange_stained_glass_pane",
+    "count": 1
+  },
+  "sortByPriceButtonItem": {
+    "id": "minecraft:gold_nugget",
+    "count": 1
+  },
+  "sortByNewestButtonItem": {
+    "id": "minecraft:clock",
+    "count": 1
+  },
+  "sortByNameButtonItem": {
+    "id": "minecraft:oak_sign",
+    "count": 1
+  },
+  "relistExpiredButtonItem": {
+    "id": "cobblemon:rare_candy",
+    "count": 1
+  },
+  "seller": "§9Vendeur : §b",
+  "price": "§9Prix : §b",
+  "remainingTime": "§9Temps restant : §b",
+  "sold_date": "§9Date de vente : §b",
+  "buyer": "§9Acheteur : §b",
+  "version": "2.6"
+}

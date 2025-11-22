@@ -1,0 +1,558 @@
+{
+  "crateID": "noctali",
+  "screenName": "&e&l✨ CAISSE NOCTALI ✨",
+  "crateName": "&e&l✨ CAISSE NOCTALI ✨",
+  "permission": "crate.noctali",
+  "openSound": "minecraft:entity.warden.heartbeat",
+  "rewardSound": "minecraft:block.respawn_anchor.deplete",
+  "movingItemSound": "minecraft:block.amethyst_block.hit",
+  "particleType": "minecraft:end_rod",
+  "animationType": "default",
+  "animationSteps": 5,
+  "animationInterval": 100,
+  "keyItem": {
+    "isVirtualKey": false,
+    "material": "minecraft:nether_star",
+    "customModelData": 106,
+    "amount": 1,
+    "displayname": "&aClé Noctali",
+    "lore": [
+      "&7Cette clé te permet d'ouvrir la &e&l✨ CAISSE NOCTALI ✨"
+    ],
+    "enchantEffect": false
+  },
+  "prizes": [
+    {
+      "type": "command",
+      "weight": 8.5,
+      "command": "minecraft:give %player% cobblemon:hp_up 64",
+      "displayItem": {
+        "material": "cobblemon:hp_up",
+        "amount": 64,
+        "displayname": "&cHP Up ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.5,
+      "command": "minecraft:give %player% cobblemon:protein 64",
+      "displayItem": {
+        "material": "cobblemon:protein",
+        "amount": 64,
+        "displayname": "&6Protein ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.5,
+      "command": "minecraft:give %player% cobblemon:iron 64",
+      "displayItem": {
+        "material": "cobblemon:iron",
+        "amount": 64,
+        "displayname": "&7Iron ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.5,
+      "command": "minecraft:give %player% cobblemon:calcium 64",
+      "displayItem": {
+        "material": "cobblemon:calcium",
+        "amount": 64,
+        "displayname": "&eCalcium ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.5,
+      "command": "minecraft:give %player% cobblemon:zinc 64",
+      "displayItem": {
+        "material": "cobblemon:zinc",
+        "amount": 64,
+        "displayname": "&bZinc ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.5,
+      "command": "minecraft:give %player% cobblemon:carbos 64",
+      "displayItem": {
+        "material": "cobblemon:carbos",
+        "amount": 64,
+        "displayname": "&aCarbos ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.0,
+      "command": "minecraft:give %player% cobblemon:master_ball 3",
+      "displayItem": {
+        "material": "cobblemon:master_ball",
+        "amount": 3,
+        "displayname": "&5Master Ball ×3",
+        "lore": [
+          "&7Capture garantie. Le rêve de tout Dresseur !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&d&e%player% &7vient d’obtenir une &5Master Ball &7!"
+    },
+    {
+      "type": "command",
+      "weight": 6.0,
+      "command": "cd give %player% 25000",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+25000 CobbleDollars",
+        "lore": [
+          "&7Jackpot intermédiaire 💸"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 6.0,
+      "command": "cd give %player% 50000",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+50000 CobbleDollars",
+        "lore": [
+          "&7Grosse prime !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6&e%player% &7vient de gagner &a50'000 CobbleDollars &7!"
+    },
+    {
+      "type": "command",
+      "weight": 5.8,
+      "command": "cd give %player% 100000",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+100000 CobbleDollars",
+        "lore": [
+          "&7Jackpot intermédiaire 💸"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 5.5,
+      "command": "minecraft:give %player% cobblemon:ability_patch 8",
+      "displayItem": {
+        "material": "cobblemon:ability_patch",
+        "amount": 8,
+        "displayname": "&aAbility Patch ×8",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 5.0,
+      "command": "minecraft:give %player% cobblemon:exp_candy_xl 24",
+      "displayItem": {
+        "material": "cobblemon:exp_candy_xl",
+        "amount": 24,
+        "displayname": "&bBonbons Exp. XL ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 5.0,
+      "command": "minecraft:give %player% cobblemon:rare_candy 64",
+      "displayItem": {
+        "material": "cobblemon:rare_candy",
+        "amount": 64,
+        "displayname": "&dSuperBonbons ×64",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% minecraft:netherite_ingot 20",
+      "displayItem": {
+        "material": "minecraft:netherite_ingot",
+        "amount": 20,
+        "displayname": "&8Lingots en Netherite",
+        "lore": [
+          "&7Version ultime, résistante à tout."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% cobblemon_utility:mastercandy 1",
+      "displayItem": {
+        "material": "cobblemon_utility:mastercandy",
+        "amount": 1,
+        "displayname": "&dCandy Niv. 100 ×1",
+        "lore": [
+          "&7Fait instantanément monter un Pokémon au niveau 100 !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&d&e%player% &7a reçu un &dCandy Niv. 100 ×1 &7!"
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% gachamachine:gacha_coin 50",
+      "displayItem": {
+        "material": "gachamachine:gacha_coin",
+        "amount": 50,
+        "displayname": "&6Gacha Coin ×50",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6&e%player% &7vient d'obtenir &6Gacha Coin ×50 &7!"
+    },
+    {
+      "type": "command",
+      "weight": 2.9,
+      "command": "minecraft:give %player% gachamachine:gacha_coin_10 20",
+      "displayItem": {
+        "material": "gachamachine:gacha_coin_10",
+        "amount": 20,
+        "displayname": "&6Gacha ×20",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6&e%player% &7obtient &e20× Gacha ×10 !"
+    },
+    {
+      "type": "command",
+      "weight": 2.8,
+      "command": "minecraft:give %player% cobblemonboxlink:box_link 1",
+      "displayItem": {
+        "material": "cobblemonboxlink:box_link",
+        "amount": 1,
+        "displayname": "&9PC à distance",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6&e%player% &7vient d'obtenir un &9PC à distance &7!"
+    },
+    {
+      "type": "command",
+      "weight": 2.8,
+      "command": "minecraft:give %player% mega_showdown:omni_ring 1",
+      "displayItem": {
+        "material": "mega_showdown:omni_ring",
+        "amount": 1,
+        "displayname": "&9Bracelet tout en un !",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&5&e%player% &7obtient un &9Bracelet tout-en-un &7!"
+    },
+    {
+      "type": "command",
+      "weight": 1.35,
+      "command": "crate key give shiny 1 %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 1,
+        "displayname": "Clé Shiny x1",
+        "lore": [
+          "",
+          ""
+        ],
+        "enchantEffect": true,
+        "customModelData": 108
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6&e%player% &7vient de gagner une &dClé Shiny ×1 &7!"
+    },
+    {
+      "type": "command",
+      "weight": 1.35,
+      "command": "crate key give noctali 2 %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 2,
+        "displayname": "Clé Noctali x2",
+        "lore": [
+          "",
+          ""
+        ],
+        "enchantEffect": true,
+        "customModelData": 106
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&6&e%player% &7vient de gagner &dClé Noctali ×2 &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.65,
+      "command": "minecraft:give %player% cobblemon_utility:atksilvercap 1",
+      "displayItem": {
+        "material": "cobblemon_utility:atksilvercap",
+        "amount": 1,
+        "displayname": "&aSilver cap ATK ×1",
+        "lore": [
+          "&7Silver cap ATK !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× ATK SILVER CAP &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.65,
+      "command": "minecraft:give %player% cobblemon_utility:spatksilvercap 1",
+      "displayItem": {
+        "material": "cobblemon_utility:spatksilvercap",
+        "amount": 1,
+        "displayname": "&aSilver cap Sp. ATK ×1",
+        "lore": [
+          "&7Silver cap Sp. ATK !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× SPATK SILVER CAP  &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.65,
+      "command": "minecraft:give %player% cobblemon_utility:spdefsilvercap 1",
+      "displayItem": {
+        "material": "cobblemon_utility:spdefsilvercap",
+        "amount": 1,
+        "displayname": "&aSilver cap Sp. DEF ×1",
+        "lore": [
+          "&7Silver cap Sp. DEF !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× SPEDEF SILVER CAP  &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.65,
+      "command": "minecraft:give %player% cobblemon_utility:defsilvercap 1",
+      "displayItem": {
+        "material": "cobblemon_utility:defsilvercap",
+        "amount": 1,
+        "displayname": "&aSilver cap DEF ×1",
+        "lore": [
+          "&7Silver cap DEF !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× DEF SILVER CAP  &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.65,
+      "command": "minecraft:give %player% cobblemon_utility:speedsilvercap 1",
+      "displayItem": {
+        "material": "cobblemon_utility:speedsilvercap",
+        "amount": 1,
+        "displayname": "&aSilver cap SPEED ×1",
+        "lore": [
+          "&7Silver cap SPEED !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× SPEED SILVER CAP  &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.65,
+      "command": "minecraft:give %player% cobblemon_utility:hpsilvercap 1",
+      "displayItem": {
+        "material": "cobblemon_utility:hpsilvercap",
+        "amount": 1,
+        "displayname": "&aSilver cap HP ×1",
+        "lore": [
+          "&7Silver cap HP !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× HP SILVER CAP &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.55,
+      "command": "minecraft:give %player% mega_showdown:legend_plate 1",
+      "displayItem": {
+        "material": "mega_showdown:legend_plate",
+        "amount": 1,
+        "displayname": "&aPlate du Dieu Arceus !",
+        "lore": [
+          "&7Plate du Dieu Arceus !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× Plate du Dieu Arceus &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.5,
+      "command": "minecraft:give %player% cobblemon_utility:shinycard 2",
+      "displayItem": {
+        "material": "cobblemon_utility:shinycard",
+        "amount": 2,
+        "displayname": "&aShiny Card ×2",
+        "lore": [
+          "&7Transforme un Pokémon en shiny !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a2× Shiny Card &7!"
+    },
+    {
+      "type": "command",
+      "weight": 0.45,
+      "command": "ci give radiant_swap %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 1,
+        "displayname": "&8Radiant Shiny Card",
+        "lore": [
+          "&7Radiant Shiny Card"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": false,
+      "broadcastGlobal": "&e%player% &7vient d'obtenir &a1× Shiny Radiant Card &7!"
+    }
+  ]
+}

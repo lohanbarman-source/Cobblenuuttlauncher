@@ -1,0 +1,98 @@
+{
+  "blacklisted_entities": [
+    // 🐾 Animaux terrestres
+    "minecraft:pig",
+    "minecraft:cow",
+    "minecraft:sheep",
+    "minecraft:chicken",
+    "minecraft:rabbit",
+    "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:mule",
+    "minecraft:llama",
+    "minecraft:trader_llama",
+    "minecraft:cat",
+    "minecraft:wolf",
+    "minecraft:fox",
+    "minecraft:goat",
+    "minecraft:camel",
+    "minecraft:turtle",
+    "minecraft:frog",
+    "minecraft:sniffer",
+    "minecraft:parrot",
+    "minecraft:panda",
+    "minecraft:polar_bear",
+
+    // 🐠 Aquatiques
+    "minecraft:salmon",
+    "minecraft:cod",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish",
+    "minecraft:squid",
+    "minecraft:glow_squid",
+    "minecraft:dolphin",
+    "minecraft:axolotl",
+
+    // 👨‍🌾 Villageois – toutes variantes
+    "minecraft:wandering_trader",
+
+    // ❌ Villageois zombifiés uniquement
+    "minecraft:zombie_villager",
+    "minecraft:zombie_villager_v2",
+
+    // ☠️ Hostiles classiques
+    "minecraft:zombie",
+    "minecraft:husk",
+    "minecraft:drowned",
+    "minecraft:skeleton",
+    "minecraft:stray",
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:creeper",
+    "minecraft:enderman",
+    "minecraft:witch",
+    "minecraft:phantom",
+    "minecraft:slime",
+    "minecraft:magma_cube",
+    "minecraft:ghast",
+    "minecraft:blaze",
+    "minecraft:wither_skeleton",
+    "minecraft:piglin",
+    "minecraft:piglin_brute",
+    "minecraft:zombified_piglin",
+    "minecraft:hoglin",
+    "minecraft:zoglin",
+    "minecraft:strider",
+    "minecraft:warden",
+    "minecraft:shulker",
+
+    // 👹 Autres entités diverses
+    "minecraft:bat",
+    "minecraft:vex",
+    "minecraft:allay",
+    "minecraft:ravager",
+    "minecraft:illusioner",
+    "minecraft:evoker",
+    "minecraft:pillager",
+    "minecraft:vindicator",
+    "minecraft:giant",
+    "minecraft:wither",
+    "minecraft:elder_guardian",
+    "minecraft:guardian",
+
+    // 🔥 Betternether
+    "betternether:firefly",
+
+    // 🫧 Oh The Biomes We've Gone
+    "biomeswevegone:man_o_war_spawn_egg",
+    "biomeswevegone:oddion_spawn_egg",
+    "biomeswevegone:hydrogen_jellyfish",
+    "biomeswevegone:oddion",
+    "biomeswevegone:man_o_war",
+
+    // ❌ Abeilles et ruches
+    "minecraft:bee",
+    "minecraft:beehive",
+    "minecraft:bee_nest"
+  ]
+}

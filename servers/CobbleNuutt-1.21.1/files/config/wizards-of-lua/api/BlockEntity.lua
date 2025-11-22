@@ -1,0 +1,32 @@
+---@meta
+--- Represents a block entity within the game world, such as a chest or furnace, containing additional data beyond a regular block.
+---@class BlockEntity
+---@field world World @Read-Only A reference to the world where this block entity is located.
+---@field name string @Read-Only The name identifier of the block entity.
+---@field pos Vec3 @Read-Only A copy of the position of the block entity within the world.
+---@field type BlockEntityType @Read-Only A reference to the specific type of block entity (e.g., chest, furnace).
+---@field nbt table A copy of the NBT (Named Binary Tag) data associated with the block entity, including custom data and metadata.
+--- Modifications to the table will **not** affect the actual block entity.
+--- To apply changes, either assign the modified table back (`blockEntity.nbt = modifiedTable`) or use `putNbt()`.
+BlockEntity = {}
+
+--- Merges the specified NBT data into this block entity's existing data.
+--- This allows updating or adding custom properties stored within the block entity.
+---
+--- ### Example
+--- ```lua
+--- local o = spell.owner
+--- local h = o:raycastBlock(5)
+--- spell.pos = h.blockPos
+--- if spell.block.type.id ~= "chest" then
+---     print("no chest found")
+---     return
+--- end
+--- local blockEntity = spell.blockEntity
+--- blockEntity:putNbt({
+---     CustomName = "Treasure Chest",
+---     Lock = "SecretKey"
+--- })
+--- ```
+---@param nbt table The NBT data to merge, which can include custom properties and attributes.
+function BlockEntity:putNbt(nbt) end

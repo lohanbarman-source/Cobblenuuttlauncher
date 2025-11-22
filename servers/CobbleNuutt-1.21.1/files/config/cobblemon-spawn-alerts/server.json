@@ -1,0 +1,13 @@
+{
+  "alertShinies": true,
+  "alertLegendaries": true,
+  "alertMythicals": true,
+  "alertUltraBeasts": true,
+  "alertParadox": true,
+  "alertStarters": false,
+  "alertHiddenAbility": false,
+  "broadcastIVs": true,
+  "broadcastEVs": true,
+  "broadcastNature": true,
+  "broadcastAbility": true
+}

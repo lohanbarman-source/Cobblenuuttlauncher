@@ -1,0 +1,95 @@
+{
+  "pokemon": {
+    "BenchedMoves": [],
+    "ScaleModifier": 1.0,
+    "Shiny": true,
+    "Ability": {
+      "AbilityName": "torrent",
+      "AbilityIndex": 0
+    },
+    "Gender": "MALE",
+    "IVs": {
+      "cobblemon:hp": 26,
+      "cobblemon:defence": 5,
+      "cobblemon:special_defence": 12,
+      "cobblemon:special_attack": 6,
+      "cobblemon:attack": 11,
+      "cobblemon:speed": 6
+    },
+    "EVs": {
+      "cobblemon:hp": 0,
+      "cobblemon:defence": 0,
+      "cobblemon:special_defence": 0,
+      "cobblemon:special_attack": 0,
+      "cobblemon:attack": 0,
+      "cobblemon:speed": 0
+    },
+    "MoveSet": [
+      {
+        "MoveName": "hydropump",
+        "MovePP": 5,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "doubleteam",
+        "MovePP": 15,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "bounce",
+        "MovePP": 5,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "substitute",
+        "MovePP": 10,
+        "RaisedPPStages": 0
+      }
+    ],
+    "Level": 100,
+    "Experience": 1059860,
+    "Friendship": 51,
+    "Health": 218,
+    "UUID": [
+      -431436961,
+      530728183,
+      -2133233758,
+      -1046441926
+    ],
+    "Species": "cobblemon:froakie",
+    "FormId": "normal",
+    "TeraType": "cobblemon:water",
+    "DmaxLevel": 0,
+    "GmaxFactor": false,
+    "Tradeable": true,
+    "PersistentData": {
+      "droploottables:periodic_timer": 8222
+    },
+    "HealingTimer": 60,
+    "Evolutions": {
+      "pending": [
+        "froakie_frogadier"
+      ],
+      "progress": []
+    },
+    "Nature": "cobblemon:rash",
+    "CaughtBall": "cobblemon:poke_ball",
+    "FaintedTimer": -1,
+    "PokemonOriginalTrainerType": "PLAYER",
+    "PokemonOriginalTrainer": "655efd3f-7fbe-46f5-aee4-efb3162202b0",
+    "Features": [
+      {
+        "cobblemon:feature_id": "dynamax_level",
+        "dynamax_level": 0
+      }
+    ],
+    "cobblemon:data_version": 1
+  },
+  "version": "2.0",
+  "id": "b14bd961-8790-4336-91c6-93161a46c74c",
+  "sellerUuid": "655efd3f-7fbe-46f5-aee4-efb3162202b0",
+  "sellerName": "Nuutt_",
+  "price": 999213.0,
+  "endTime": 1763915690052,
+  "isPokemon": true
+}

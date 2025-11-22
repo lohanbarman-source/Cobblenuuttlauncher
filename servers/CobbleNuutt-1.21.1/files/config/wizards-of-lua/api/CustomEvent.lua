@@ -1,0 +1,38 @@
+---@meta
+--- Represents a custom event that includes a name and optional data.
+--- This event can be canceled.
+---
+--- The `data` table is **shared** between the sender and all interceptors or collectors.
+--- That means any changes made to `event.data` in an interceptor will directly affect the
+--- table passed to `spell:fire(...)`.
+---
+--- ### Example — Sender (`custom_event_sender.lua`)
+--- ```lua
+--- local customEventData = {
+---   value = 1
+--- }
+--- log("Sending MyCustomEvent " .. str(customEventData))
+--- spell:fire("MyCustomEvent", customEventData)
+--- log("Afterwards changed: " .. str(customEventData))
+--- ```
+---
+--- ### Example — Receiver (`custom_event_receiver.lua`)
+--- ```lua
+--- spell:intercept({ "MyCustomEvent" }, function(event)
+---   log("Received event: " .. str(event))
+---   event.data.value = event.data.value + 1
+--- end)
+---
+--- while true do sleep(20) end
+--- ```
+---
+--- The output of the sender will be:
+--- ```
+--- Sending MyCustomEvent { value = 1 }
+--- Afterwards changed: { value = 2 }
+--- ```
+
+---@class CustomEvent
+---@field name string @Read-Only The name of the event.
+---@field data table @Read-Only A reference to the shared table containing additional user-defined data.
+CustomEvent = {}

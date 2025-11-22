@@ -1,0 +1,6 @@
+gamerules: 
+gamerule_tntExplosionDropDecay: false
+gamerule_keepInventory: true
+gamerule_fallDamage: true
+gamerule_blockExplosionDropDecay: false
+gamerule_doFireTick: false

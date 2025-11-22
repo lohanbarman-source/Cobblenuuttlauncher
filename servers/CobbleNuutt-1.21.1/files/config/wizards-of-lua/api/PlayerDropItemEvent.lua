@@ -1,0 +1,16 @@
+---@meta
+--- Triggered when a player has dropped an item.
+--- This event provides access to the player and the item dropped.
+--- This event cannot be canceled. To prevent the item from dropping, intercept the PlayerDropSelectedItemEvent instead.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({"PlayerDropItemEvent"}, function(evt) ---@cast evt PlayerDropItemEvent
+---   evt.droppedItem:kill()
+--- end)
+--- ```
+---@class PlayerDropItemEvent
+---@field name string @Read-Only The name of the event.
+---@field player Player @Read-Only A reference to the player who is dropping the item.
+---@field droppedItem ItemEntity @Read-Only A reference to the item entity that is about to be dropped by the player.
+PlayerDropItemEvent = {}

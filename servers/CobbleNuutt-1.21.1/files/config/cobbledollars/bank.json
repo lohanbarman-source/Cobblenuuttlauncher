@@ -1,0 +1,92 @@
+{
+  "bank": [
+    {
+      "item": "minecraft:wheat",
+      "price": 4
+    },
+    {
+      "item": "minecraft:pumpkin",
+      "price": 12
+    },
+    {
+      "item": "minecraft:melon_slice",
+      "price": 2
+    },
+    {
+      "item": "cobblemon:medicinal_leek",
+      "price": 2.25
+    },
+    {
+      "item": "minecraft:beetroot",
+      "price": 5
+    },
+    {
+      "item": "minecraft:sugar_cane",
+      "price": 3
+    },
+    {
+      "item": "minecraft:honeycomb",
+      "price": 30
+    },
+    {
+      "item": "minecraft:apple",
+      "price": 2
+    },
+   {
+      "item": "minecraft:potato",
+      "price": 2
+    },
+    {
+      "item": "minecraft:carrot",
+      "price": 2
+    },
+   {
+      "item": "minecraft:cod",
+      "price": 20
+    },
+    {
+      "item": "minecraft:cooked_cod",
+      "price": 20
+    },
+   {
+      "item": "minecraft:salmon",
+      "price": 28
+    },
+    {
+      "item": "minecraft:cooked_salmon",
+      "price": 28
+    },
+    {
+      "item": "minecraft:pufferfish",
+      "price": 35
+    },
+    {
+      "item": "minecraft:tropical_fish",
+      "price": 60
+    },
+    {
+      "item": "minecraft:gold_ingot",
+      "price": 45
+    },
+    {
+      "item": "minecraft:gold_block",
+      "price": 405
+    },
+    {
+      "item": "minecraft:diamond",
+      "price": 75
+    },
+    {
+      "item": "minecraft:diamond_block",
+      "price": 750
+    },
+    {
+      "item": "minecraft:netherite_ingot",
+      "price": 400
+    },
+    {
+      "item": "minecraft:bread",
+      "price": 13
+    }
+  ]
+}

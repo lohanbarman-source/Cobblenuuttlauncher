@@ -1,0 +1,28 @@
+---@meta
+--- Represents an event that occurs after a player breaks a block, containing information about the block and the player.
+--- This event cannot be canceled.
+---
+--- ### Example
+--- ```lua
+--- local breakQueue = spell:collect("AfterPlayerBlockBreakEvent")
+--- while true do
+---     local evt = breakQueue:next()
+---     --- @cast evt AfterPlayerBlockBreakEvent
+---     local player = evt.player
+---     local pos    = evt.pos
+---     print(string.format(
+---         "%s broke a block at %s",
+---         player.name, pos
+---     ))
+---     spell.pos = pos
+---     spell:execute("/particle minecraft:explosion_emitter ~ ~ ~ 0.5 0.5 0.5 0 5 force")
+--- end
+--- ```
+---@class AfterPlayerBlockBreakEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world where the block break occurred.
+---@field player Player @Read-Only A reference to the player who broke the block.
+---@field pos Vec3 @Read-Only A copy of the position of the block that was broken.
+---@field block Block @Read-Only A copy of the block that was broken.
+---@field blockEntity BlockEntity @Read-Only A reference to the block entity at the block's position, if applicable.
+AfterPlayerBlockBreakEvent = {}

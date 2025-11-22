@@ -1,0 +1,401 @@
+{
+  "reward_groups": {
+    "Apprenti (10%) • 16× Super Balls • 16× Rapide Balls• 1× PokéFinder • 1× PokéNav": {
+      "icon": "cobblemon:poke_ball",
+      "icon_data": {},
+      "required_caught_percent": 10.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon:great_ball",
+          "item_data": {},
+          "count": 16
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "cobblemon:quick_ball",
+          "item_data": {},
+          "count": 16
+        },
+        "item_group_3": {
+          "type": "item",
+          "item": "cobblenav:pokefinder_item_black",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_4": {
+          "type": "item",
+          "item": "cobblenav:pokenav_item_base",
+          "item_data": {},
+          "count": 1
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Chercheur (20%) • 32× Rapide Balls • 20× Bonbons Exp. XL • 1× Boussole de la Nature": {
+      "icon": "cobblemon:premier_ball",
+      "icon_data": {},
+      "required_caught_percent": 20.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon:quick_ball",
+          "item_data": {},
+          "count": 32
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "cobblemon:exp_candy_xl",
+          "item_data": {},
+          "count": 20
+        },
+        "item_group_3": {
+          "type": "item",
+          "item": "naturescompass:naturescompass",
+          "item_data": {},
+          "count": 1
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Archiviste (30%) • 32× Rêve Balls • 2× Œuf de Villageois": {
+      "icon": "cobblemon:love_ball",
+      "icon_data": {},
+      "required_caught_percent": 30.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon:dream_ball",
+          "item_data": {},
+          "count": 32
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "minecraft:villager_spawn_egg",
+          "item_data": {},
+          "count": 2
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Explorateur (40%) • 1× Étoile du Nether • 5× Lingots de Netherite": {
+      "icon": "cobblemon:slate_ball",
+      "icon_data": {},
+      "required_caught_percent": 40.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "minecraft:nether_star",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "minecraft:netherite_ingot",
+          "item_data": {},
+          "count": 5
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Gardien (50%) • 1× Master Ball • 1× Evoli Shiny ou Radiant": {
+      "icon": "cobblemon:heavy_ball",
+      "icon_data": {},
+      "required_caught_percent": 50.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon:master_ball",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_2": {
+          "type": "command",
+          "commands": [
+            "pokegiveother %player% eevee shiny=yes"
+          ],
+          "messageGlobal": true,
+          "messagePlayer": true,
+          "messageCustom": true,
+          "broadcastGlobal": ""
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Professeur (60%) • 1× Patch Talent • 10× Gacha Coins": {
+      "icon": "cobblemon:moon_ball",
+      "icon_data": {},
+      "required_caught_percent": 60.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon:ability_patch",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "gachamachine:gacha_coin_10",
+          "item_data": {},
+          "count": 10
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Commandant (70%) • 1× Carte Shiny • 1× Relique de Dévolution • 1× Anneau Omni ring": {
+      "icon": "cobblemon:ultra_ball",
+      "icon_data": {},
+      "required_caught_percent": 70.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon_utility:shinycard",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "cobblemon_utility:devolutionrelic",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_3": {
+          "type": "item",
+          "item": "mega_showdown:omni_ring",
+          "item_data": {},
+          "count": 1
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Élite (80%) • 30× Gacha Coins Noir • 5× Clé Noctali": {
+      "icon": "cobblemon:beast_ball",
+      "icon_data": {},
+      "required_caught_percent": 80.0,
+      "rewards": {
+        "item_group": {
+          "type": "item",
+          "item": "gachamachine:gacha_coin_10",
+          "item_data": {},
+          "count": 30
+        },
+        "item_group_2": {
+          "type": "command",
+          "commands": [
+            "crate key give noctali 5 %player%"
+          ],
+          "messageGlobal": true,
+          "messagePlayer": true,
+          "messageCustom": true,
+          "broadcastGlobal": ""
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Maître (90%) • 1× Carte Shiny Radiant • 6× Instruments légendaire de Genshin": {
+      "icon": "cobblemon:master_ball",
+      "icon_data": {},
+      "required_caught_percent": 90.0,
+      "rewards": {
+        "item_group_1": {
+          "type": "command",
+          "commands": [
+            "ci give radiant_swap %player% "
+          ],
+          "messageGlobal": true,
+          "messagePlayer": true,
+          "messageCustom": true,
+          "broadcastGlobal": ""
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "genshinstrument:windsong_lyre",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_3": {
+          "type": "item",
+          "item": "genshinstrument:vintage_lyre",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_4": {
+          "type": "item",
+          "item": "genshinstrument:floral_zither",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_5": {
+          "type": "item",
+          "item": "genshinstrument:glorious_drum",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_6": {
+          "type": "item",
+          "item": "genshinstrument:nightwind_horn",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_7": {
+          "type": "item",
+          "item": "genshinstrument:ukulele",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_8": {
+          "type": "item",
+          "item": "genshinstrument:djem_djem_drum",
+          "item_data": {},
+          "count": 1
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    },
+
+    "Abyssal (100%) • 3× Cartes Shiny • 2× Cartes Shiny Radiant • 1× CobbleMax • Annonce globale de ta réussite !": {
+      "icon": "badgebox:master_ribbon",
+      "icon_data": {},
+      "required_caught_percent": 100.0,
+      "rewards": {
+        "command_group": {
+          "type": "command",
+          "commands": [
+            "tellraw @a [\"\",{\"text\":\"[\",\"color\":\"dark_gray\"},{\"text\":\"DexRewards\",\"color\":\"blue\"},{\"text\":\"]\",\"color\":\"dark_gray\"},{\"text\":\" %player% has completed their pokedex!\",\"color\":\"gold\"}]"
+          ]
+        },
+        "item_group": {
+          "type": "item",
+          "item": "cobblemon_utility:shinycard",
+          "item_data": {},
+          "count": 3
+        },
+        "item_group_2": {
+          "type": "item",
+          "item": "cobblemon_utility:cobblemax",
+          "item_data": {},
+          "count": 1
+        },
+        "item_group_3": {
+          "type": "command",
+          "commands": [
+            "ci give radiant_swap %player% "
+          ],
+          "messageGlobal": true,
+          "messagePlayer": true,
+          "messageCustom": true,
+          "broadcastGlobal": ""
+        },
+        "item_group_4": {
+          "type": "command",
+          "commands": [
+            "ci give radiant_swap %player% "
+          ],
+          "messageGlobal": true,
+          "messagePlayer": true,
+          "messageCustom": true,
+          "broadcastGlobal": ""
+        },
+        "sound_group": {
+          "type": "command",
+          "commands": [
+            "execute at %player% run playsound minecraft:ui.toast.challenge_complete player %player% ~ ~ ~ 1 1"
+          ],
+          "messageGlobal": false,
+          "messagePlayer": false,
+          "messageCustom": false,
+          "broadcastGlobal": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+---@meta
+--- Triggered whenever a chunk is loaded into memory.
+--- This event cannot be canceled.
+---
+--- When this event is fired, the chunk is already in the world.
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("ChunkLoadEvent")
+--- while true do
+---     local evt = queue:next()
+---     ---@cast evt ChunkLoadEvent
+---     print("Chunk " .. evt.chunkX .. ", " .. evt.chunkZ .. " loaded.")
+--- end
+--- ```
+---@class ChunkLoadEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world where the chunk is being loaded.
+---@field chunkX number @Read-Only The x-coordinate of the loaded chunk (in chunk space).
+---@field chunkZ number @Read-Only The z-coordinate of the loaded chunk (in chunk space).
+ChunkLoadEvent = {}

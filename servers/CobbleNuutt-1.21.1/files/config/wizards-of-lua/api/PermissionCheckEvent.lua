@@ -1,0 +1,45 @@
+---@meta
+--- Fired whenever any permission system evaluates a permission node.
+--- This event cannot be canceled.
+---
+--- **Intercept phase** — before default logic:  
+--- Handlers here may override the outcome by assigning `allowed`:
+---  • `true`  — grant permission  
+---  • `false` — deny permission  
+---  • `nil`   — continue with default logic  
+---
+--- Assigning `allowed` outside of an intercept callback (e.g. in collectors) is ignored.
+---
+--- ### Example: Let players wearing golden helmets bypass `examplemod.someaction.*`
+--- ```lua
+--- local PREFIX = "examplemod.someaction."
+---
+--- spell:intercept({ "PermissionCheckEvent" }, function(evt)
+---   ---@cast evt PermissionCheckEvent
+---   if evt.permission:find(PREFIX, 1, true)
+---       and instanceOf(Player, evt.entity)
+---   then
+---     local player = evt.entity ---@cast player Player
+---     local helmet = player:getEquipment("head")
+---     -- grant this permission if wearing a golden helmet
+---     if helmet and helmet.type.id == "golden_helmet" then
+---       evt.allowed = true
+---     else
+---       evt.allowed = false
+---     end
+---     return false -- cancel default handling, our interceptor provides the decision
+---   end
+---   return true
+--- end)
+---
+--- -- Keep the spell alive so the interceptor stays active
+--- while true do sleep(20) end
+--- ```
+---@class PermissionCheckEvent
+---@field name string @Read-Only The event’s name.
+---@field permission string @Read-Only The permission node being checked.
+---@field world World|nil @Read-Only A reference to the world where the check occurs, or nil if unavailable.
+---@field entity Entity|nil @Read-Only A reference to the entity whose permissions are being checked, or nil if not applicable.
+---@field spell Spell|nil @Read-Only A reference to the spell that triggered this check, or nil if not linked to a spell.
+---@field allowed boolean|nil Optional. **Intercept only:** set to `true` to grant, `false` to deny, or `nil` to defer to default logic. Assigning `allowed` in collectors has no effect.
+PermissionCheckEvent = {}

@@ -1,0 +1,52 @@
+{
+  "messages": {
+    "crateCreated": "&aLa crate &6%crate% &aa été créée !",
+    "crateRemoved": "&cLa crate &6%crate% &ca été supprimée !",
+    "crateNotFound": "&cLa crate &6%crate% &cn’existe pas !",
+    "noPermission": "&cVous n’avez pas la permission d’utiliser cette commande !",
+    "cratesReloaded": "&aConfiguration de ShadowCrates rechargée !",
+    "playerNotFound": "&cJoueur introuvable !",
+    "crateSet": "&aVous avez transformé ce bloc en crate : &6%crate%",
+    "crateUnsetBreak": "&cVous avez cassé le bloc de la crate &6%crate%&c ; elle a été supprimée !",
+    "invalidKeyItem": "&cL’objet que vous tenez n’est pas la clé correcte pour la crate &6%crate%&c !",
+    "noKeyInHand": "&cVous devez tenir une clé de crate dans votre main pour ouvrir cette crate !",
+    "noPrizeFound": "&cAucune récompense trouvée dans la crate &6%crate%&c !",
+    "inventoryFull": "&cVotre inventaire est plein, vous ne pouvez pas recevoir les récompenses !",
+    "notEnoughKeys": "&cVous n’avez pas assez de clés pour ouvrir la crate &6%crate%&c !",
+    "inUse": "&cQuelqu’un utilise déjà cette crate !",
+    "alreadyOpening": "&cVous êtes déjà en train d’ouvrir cette crate. Veuillez patienter !",
+    "gaveKey": "&aVous avez donné &6%amount% &aclé(s) pour la crate &6%crate% &aau joueur &6%player%&a !",
+    "gaveKeyMany": "&aVous avez donné &6%amount% &aclé(s) pour la crate &6%crate% &à &6%count% joueurs&a !",
+    "inventoryFullStored": "&cInventaire plein ! La récompense a été sauvegardée dans votre stockage. Utilisez /crate storage pour la récupérer.",
+    "storageCleared": "&aVotre stockage de récompenses a été vidé !",
+    "storageClaim": "&aVous avez récupéré une récompense stockée !",
+    "virtualKeyCleared": "&aToutes les clés virtuelles pour la crate &6%crate% &aont été retirées du joueur &6%player%&a !",
+    "virtualKeyClearedMany": "&aToutes les clés virtuelles pour la crate &6%crate% &aont été retirées de &6%count% joueurs&a !",
+    "virtualKeyClearedAll": "&aToutes les clés virtuelles ont été retirées du joueur &6%player%&a !",
+    "virtualKeyClearedAllMany": "&aToutes les clés virtuelles ont été retirées de &6%count% joueurs&a !",
+    "virtualKeyCount": "&e%player% &aa &6%amount% &aclés virtuelles pour la crate &6%crate%&a !",
+    "gaveAllKeys": "&aVous avez donné &e%amount% &aclé(s) pour chacune des &7%count% &acrates au joueur &e%player%&a !",
+    "gaveAllKeysMany": "&aVous avez donné &e%amount% &aclé(s) pour chacune des &7%crates% &acrates à &e%count% joueurs&a !",
+    "backupCreated": "&a✅ Sauvegarde créée avec succès !",
+    "backupRestored": "&e♻ Sauvegarde restaurée avec succès !",
+    "noBackupFound": "&c⚠ Aucune sauvegarde trouvée à restaurer !",
+    "crateInvalidAnimation": "&cCette crate ne supporte pas l’ouverture à distance !",
+    "crateOpenedForPlayer": "&aCrate &6%crate% &aouverte pour &e%player%&a !",
+    "crateOpenedForPlayers": "&aCrate &6%crate% &aouverte pour &e%count% joueurs&a !"
+  },
+  "database": {
+    "enabled": true,
+    "type": "sqlite",
+    "mysql": {
+      "host": "localhost",
+      "port": 3306,
+      "database": "shadowcrates",
+      "username": "root",
+      "password": "password"
+    }
+  },
+  "autoBackUPs": true,
+  "logSystems": {
+    "logCrates": true
+  }
+}

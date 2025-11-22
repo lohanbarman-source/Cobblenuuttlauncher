@@ -1,0 +1,16 @@
+{
+  "$schema": "file:///C:/CobbleNuutt/CobbleNuutt-Distribution/schemas/ServerMetaSchema.schema.json",
+  "meta": {
+    "version": "1.0.0",
+    "name": "CobbleNuutt Server",
+    "description": "CobbleNuutt Running Minecraft 1.21.1 (Fabric v0.17.2)",
+    "icon": "",
+    "address": "cobblenuutt.minesr.com:27614",
+    "mainServer": true,
+    "autoconnect": true
+  },
+  "fabric": {
+    "version": "0.17.2"
+  },
+  "untrackedFiles": []
+}

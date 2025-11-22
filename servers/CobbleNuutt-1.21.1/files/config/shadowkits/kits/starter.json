@@ -1,0 +1,130 @@
+{
+  "name": "Starter",
+  "onJoin": false,
+  "firstTimeJoin": false,
+  "cooldown": "1h",
+  "claims": true,
+  "maxClaims": 5,
+  "permission": "kit.adventurestarter",
+  "costMoney": false,
+  "cost": 100,
+  "claimSound": "minecraft:entity.player.levelup",
+  "cooldownSound": "minecraft:entity.villager.no",
+  "page": -1,
+  "slotOnPage": -1,
+  "displayItem": {
+    "material": "minecraft:diamond_sword",
+    "amount": 1,
+    "displayname": "&bKit Starter",
+    "lore": [
+      "&7A powerful kit to begin your journey!",
+      "&aIncludes enchanted tools and a food!"
+    ],
+    "cooldownLore": true,
+    "enchantEffect": true,
+    "unbreakable": false
+  },
+  "items": [
+    {
+      "material": "minecraft:diamond_sword",
+      "amount": 1,
+      "enchants": [
+        {
+          "name": "minecraft:sharpness",
+          "level": 50
+        },
+        {
+          "name": "minecraft:unbreaking",
+          "level": 10
+        }
+      ],
+      "displayname": "&bStarter Sword",
+      "lore": [
+        "&7A reliable sword for adventure!"
+      ],
+      "cooldownLore": false,
+      "enchantEffect": true,
+      "unbreakable": false,
+      "damage": 50
+    },
+    {
+      "material": "minecraft:diamond_pickaxe",
+      "amount": 1,
+      "enchants": [
+        {
+          "name": "minecraft:efficiency",
+          "level": 3
+        },
+        {
+          "name": "minecraft:unbreaking",
+          "level": 2
+        }
+      ],
+      "displayname": "&bStarter Pickaxe",
+      "lore": [
+        "&7Mine faster with efficiency!"
+      ],
+      "cooldownLore": false,
+      "enchantEffect": false,
+      "unbreakable": false
+    },
+    {
+      "material": "minecraft:diamond_axe",
+      "amount": 1,
+      "enchants": [
+        {
+          "name": "minecraft:efficiency",
+          "level": 3
+        },
+        {
+          "name": "minecraft:unbreaking",
+          "level": 2
+        }
+      ],
+      "displayname": "&bStarter Axe",
+      "lore": [
+        "&7Chop trees with ease!"
+      ],
+      "cooldownLore": false,
+      "enchantEffect": false,
+      "unbreakable": false
+    },
+    {
+      "material": "minecraft:diamond_shovel",
+      "amount": 1,
+      "enchants": [
+        {
+          "name": "minecraft:efficiency",
+          "level": 3
+        },
+        {
+          "name": "minecraft:unbreaking",
+          "level": 2
+        }
+      ],
+      "displayname": "&bStarter Shovel",
+      "lore": [
+        "&7Dig through dirt effortlessly!"
+      ],
+      "cooldownLore": false,
+      "enchantEffect": false,
+      "unbreakable": false
+    }
+  ],
+  "commands": [
+    {
+      "command": "give %player% minecraft:cooked_beef 32",
+      "displayItem": {
+        "material": "minecraft:cooked_beef",
+        "amount": 32,
+        "displayname": "&6Starter Food",
+        "lore": [
+          "&7Receive 32 cooked beef for your adventure!"
+        ],
+        "cooldownLore": false,
+        "enchantEffect": false,
+        "unbreakable": false
+      }
+    }
+  ]
+}

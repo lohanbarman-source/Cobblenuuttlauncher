@@ -1,0 +1,62 @@
+{
+  "enablePokemonSales": true,
+  "enableItemSales": false,
+  "enableAsyncSearches": false,
+  "broadcastListings": true,
+  "enablePermissionNodes": true,
+  "maxListingsPerPlayer": 8,
+  "listingDuration": 72,
+"discord": {
+  "useWebhooks": true,
+  "url": "https://discord.com/api/webhooks/1438176222935912458/nXPqV7yh3sn-5MIz7J29v5wRPliU-GusskersTLpsJtI7NxdSSYJMh80nE-C6OKKaj02",
+  "useEmbed": true,
+  "embedTemplate": "gts_embed.json"
+},
+  "showBreedable": false,
+  "taxRate": 0,
+  "minPrice1IV": 10000.0,
+  "minPrice2IV": 10000.0,
+  "minPrice3IV": 10000.0,
+  "minPrice4IV": 10000.0,
+  "minPrice5IV": 50000.0,
+  "minPrice6IV": 80000.0,
+  "minPriceHA": 50000.0,
+  "minPriceLegendary": 500000.0,
+  "minPriceUltrabeast": 250000.0,
+  "maximumPrice": 30000000.0,
+  "customItemPrices": [
+    {
+      "item": {
+        "id": "cobblemon:destiny_knot",
+        "count": 1
+      },
+      "price": 100000.0
+    }
+  ],
+  "bannedItems": [
+    {
+      "id": "cobblemon:lucky_egg",
+      "count": 1
+    }
+  ],
+  "customPokemonPrices": [
+    {
+      "pokemon": {
+        "species": "blaziken",
+        "form": "",
+        "ability": "speedboost",
+        "gender": "male"
+      },
+      "price": 10000.0
+    }
+  ],
+  "bannedPokemon": [
+    {
+      "species": "blaziken",
+      "form": "",
+      "ability": "speedboost",
+      "gender": "male"
+    }
+  ],
+  "version": "2.2"
+}

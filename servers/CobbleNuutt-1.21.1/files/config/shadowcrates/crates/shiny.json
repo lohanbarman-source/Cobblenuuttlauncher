@@ -1,0 +1,63 @@
+{
+  "crateID": "shiny",
+  "screenName": "&1&l✨ CAISSE SKIN A VENIR  ✨",
+  "crateName": "&1&l✨ CAISSE SKIN A VENIR ✨",
+  "permission": "crate.shiny",
+  "openSound": "minecraft:entity.warden.heartbeat",
+  "rewardSound": "minecraft:block.respawn_anchor.deplete",
+  "movingItemSound": "minecraft:block.amethyst_block.hit",
+  "particleType": "minecraft:end_rod",
+  "animationType": "default",
+  "animationSteps": 5,
+  "animationInterval": 100,
+  "keyItem": {
+    "isVirtualKey": false,
+    "material": "minecraft:nether_star",
+    "customModelData": 108,
+    "amount": 1,
+    "displayname": "&5Clé Shiny",
+    "lore": [
+      "&7Cette clé te permet d'ouvrir la &1&l✨ CAISSE SHINY ✨",
+      "&7Caisse la plus rare du serveur."
+    ],
+    "enchantEffect": false
+  },
+  "prizes": [
+    {
+      "type": "command",
+      "weight": 50.0,
+      "command": "minecraft:give %player% convenientdecor:gnome_plushie 1",
+      "displayItem": {
+        "material": "convenientdecor:gnome_plushie",
+        "amount": 1,
+        "displayname": "&6Cadeau ×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false,
+      "broadcastGlobal": ""
+    },
+    {
+      "type": "command",
+      "weight": 50.0,
+      "command": "minecraft:give %player% convenientdecor:silly_alien_plushie 1",
+      "displayItem": {
+        "material": "convenientdecor:silly_alien_plushie",
+        "amount": 1,
+        "displayname": "&6Cadeau ×1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false,
+      "broadcastGlobal": ""
+    }
+  ]
+}

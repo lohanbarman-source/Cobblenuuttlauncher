@@ -1,0 +1,86 @@
+{
+  "pokemon": {
+    "BenchedMoves": [],
+    "ScaleModifier": 1.0,
+    "Shiny": false,
+    "Ability": {
+      "AbilityName": "torrent",
+      "AbilityIndex": 0
+    },
+    "Gender": "MALE",
+    "IVs": {
+      "cobblemon:attack": 26,
+      "cobblemon:special_defence": 7,
+      "cobblemon:special_attack": 29,
+      "cobblemon:speed": 7,
+      "cobblemon:hp": 26,
+      "cobblemon:defence": 26
+    },
+    "EVs": {
+      "cobblemon:attack": 0,
+      "cobblemon:special_defence": 0,
+      "cobblemon:special_attack": 0,
+      "cobblemon:speed": 0,
+      "cobblemon:hp": 0,
+      "cobblemon:defence": 0
+    },
+    "MoveSet": [
+      {
+        "MoveName": "bubble",
+        "MovePP": 30,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "growl",
+        "MovePP": 40,
+        "RaisedPPStages": 0
+      },
+      {
+        "MoveName": "pound",
+        "MovePP": 35,
+        "RaisedPPStages": 0
+      }
+    ],
+    "Level": 1,
+    "Experience": 0,
+    "Friendship": 50,
+    "Health": 12,
+    "UUID": [
+      473171546,
+      461324432,
+      -1776222008,
+      -932798216
+    ],
+    "Species": "cobblemon:froakie",
+    "FormId": "normal",
+    "TeraType": "cobblemon:flying",
+    "DmaxLevel": 0,
+    "GmaxFactor": false,
+    "Tradeable": true,
+    "PersistentData": {},
+    "HealingTimer": 60,
+    "Evolutions": {
+      "pending": [],
+      "progress": []
+    },
+    "Nature": "cobblemon:quiet",
+    "CaughtBall": "cobblemon:poke_ball",
+    "FaintedTimer": -1,
+    "PokemonOriginalTrainerType": "PLAYER",
+    "PokemonOriginalTrainer": "655efd3f-7fbe-46f5-aee4-efb3162202b0",
+    "Features": [
+      {
+        "cobblemon:feature_id": "dynamax_level",
+        "dynamax_level": 0
+      }
+    ],
+    "cobblemon:data_version": 1
+  },
+  "version": "2.0",
+  "id": "c957ade6-97ef-4a49-8b6c-2b403fc03510",
+  "sellerUuid": "655efd3f-7fbe-46f5-aee4-efb3162202b0",
+  "sellerName": "Nuutt_",
+  "price": 10000.0,
+  "endTime": 1763670800862,
+  "isPokemon": true
+}

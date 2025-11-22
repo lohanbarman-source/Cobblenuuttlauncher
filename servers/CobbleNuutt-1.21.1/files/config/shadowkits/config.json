@@ -1,0 +1,36 @@
+{
+  "database": {
+    "enabled": false,
+    "type": "sqlite",
+    "mysql": {
+      "host": "127.0.0.1",
+      "port": 3306,
+      "database": "shadowkits",
+      "username": "root",
+      "password": "password"
+    }
+  },
+  "messages": {
+    "kitClaimed": "&aYou have claimed the kit: &6%kit%",
+    "noPermission": "&cYou do not have permission to use this kit!",
+    "inCooldown": "&cYou must wait before claiming this kit again!",
+    "kitNotFound": "&cKit &6%kit% &cdoes not exist!",
+    "kitCreated": "&aKit &6%kit% &ahas been created!",
+    "kitGiven": "&aKit &6%kit% &awas given to &6%player%!",
+    "kitRemoved": "&cKit &6%kit% &chas been removed!",
+    "playerNotFound": "&cPlayer not found!",
+    "kitsReloaded": "&aKits configuration reloaded successfully!",
+    "notEnoughMoney": "&cYou do not have enough money to claim this kit! Cost: &6%cost%",
+    "kitPurchased": "&aYou have purchased the kit for &6%cost%!",
+    "economyNotAvailable": "&cThe economy system is not available!",
+    "kitMaxClaimsReached": "&cYou have reached the maximum number of claims (&6%max%&c) for the kit: &6%kit%!",
+    "kitCooldownReset": "&aCooldown for kit &6%kit% &ahas been reset for player &6%player%&a!",
+    "kitCooldownResetSelf": "&aYour cooldown for kit &6%kit% &ahas been reset!",
+    "inventoryFull": "&cYour inventory is full! Make some space before claiming this kit.",
+    "kitBlockSet": "&aYou've set the block (&7%x% %y% %z%&a) for kit &6%kit%&a.",
+    "kitBlockUnset": "&aYou've unlinked the kit from the block (&7%x% %y% %z%&a).",
+    "kitBlockLookAtBlock": "&cLook at a block within 6 blocks to use this command!",
+    "cooldownLoreFormat": "&7Cooldown: &e%time%",
+    "cooldownReadyText": "&aReady"
+  }
+}

@@ -1,0 +1,21 @@
+---@meta
+--- Triggered whenever an entity is loaded into the world.
+--- This event cannot be canceled.
+---
+--- When this event is fired, the entity has just been added to the world and is fully initialized.
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("EntitySpawnEvent")
+--- while true do
+---   local evt = queue:next()
+---   ---@cast evt EntitySpawnEvent
+---   if evt.entity.type.id == "chicken" then
+---     spell:execute("/attribute " .. evt.entity.uuid .. " minecraft:generic.scale base set 2")
+---   end
+--- end
+--- ```
+---@class EntitySpawnEvent
+---@field name string @Read-Only The name of the event.
+---@field entity Entity @Read-Only A reference to the entity being loaded.
+EntitySpawnEvent = {}

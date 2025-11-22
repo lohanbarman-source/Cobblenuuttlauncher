@@ -1,0 +1,37 @@
+---@meta
+--- Represents the item inventory of a specific player.
+---
+--- In vanilla Minecraft, the inventory has 41 slots, indexed from 0 to 40:
+--- - Slots 0–8: 9 hotbar slots
+--- - Slots 9–35: 27 main inventory slots
+--- - Slots 36–39: 4 armor slots (feet, legs, chest, head)
+--- - Slot 40: offhand slot
+---
+--- Each slot holds a reference to an `Item` object or `nil`.
+--- If an item is present in a slot, its fields (like `name` or `count`) can be modified directly.
+---
+--- ### Example: Create and modify an item in a slot
+--- ```lua
+--- local player = spell.owner
+--- ---@cast player Player
+---
+--- local inv = player.inventory
+--- if inv[20] == nil then
+---   inv[20] = Item:new("emerald")
+--- end
+---
+--- local item = inv[20]
+--- ---@cast item Item
+--- item.count = 3  -- Increases the stack size to 3
+--- ```
+---@class PlayerInventory
+---@field selectedSlot number The index of the currently selected hotbar slot. The corresponding item is in the player's main hand.
+PlayerInventory = {}
+
+--- Clears the entire inventory.
+---
+--- ### Example
+--- ```lua
+--- spell.owner.inventory:clear()
+--- ```
+function PlayerInventory:clear() end

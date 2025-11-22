@@ -1,0 +1,18 @@
+---@meta
+--- Triggered when a player swings their hand.
+--- This event cannot be canceled.
+--- It may fire repeatedly while the player holds down the mouse button.
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("PlayerHandSwingEvent")
+--- while true do
+---   local evt = queue:next()
+---   spell:execute("playsound minecraft:block.amethyst_block.break player @a ~ ~ ~ 100 1")
+--- end
+--- ```
+---@class PlayerHandSwingEvent
+---@field name string @Read-Only The name of the event.
+---@field player Player @Read-Only A reference to the player who triggered the hand swing event.
+---@field hand string @Read-Only The hand used to perform the swing, either "MAIN_HAND" or "OFF_HAND".
+PlayerHandSwingEvent = {}

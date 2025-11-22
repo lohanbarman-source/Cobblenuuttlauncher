@@ -1,0 +1,22 @@
+{
+  "crateID": "",
+  "screenName": "",
+  "crateName": "",
+  "permission": "",
+  "openSound": "",
+  "rewardSound": "",
+  "movingItemSound": "",
+  "particleType": "minecraft:happy_villager",
+  "animationType": "default",
+  "animationSteps": 80,
+  "animationInterval": 100,
+  "keyItem": {
+    "isVirtualKey": false,
+    "material": "minecraft:air",
+    "amount": 1,
+    "displayname": "",
+    "lore": [],
+    "enchantEffect": false
+  },
+  "prizes": []
+}

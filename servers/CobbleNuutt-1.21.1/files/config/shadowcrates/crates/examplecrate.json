@@ -1,0 +1,170 @@
+{
+  "crateID": "EpicCrate",
+  "screenName": "&6Epic Crate",
+  "crateName": "&6Epic Crate",
+  "permission": "crate.epic",
+  "openSound": "minecraft:block.ender_chest.open",
+  "rewardSound": "minecraft:entity.player.levelup",
+  "movingItemSound": "minecraft:entity.item.pickup",
+  "particleType": "minecraft:totem_of_undying",
+  "animationType": "default",
+  "animationSteps": 40,
+  "animationInterval": 200,
+  "keyItem": {
+    "isVirtualKey": false,
+    "material": "minecraft:nether_star",
+    "customModelData": 555,
+    "amount": 1,
+    "displayname": "&dEpic Crate Key",
+    "lore": [
+      "&7Use this key to unlock rare rewards!"
+    ],
+    "enchantEffect": true
+  },
+  "prizes": [
+    {
+      "type": "item",
+      "weight": 20.0,
+      "material": "minecraft:netherite_sword",
+      "amount": 1,
+      "displayname": "&cBlazing Sword",
+      "lore": [
+        "&7Forged in the depths of the Nether!"
+      ],
+      "enchants": [
+        {
+          "name": "minecraft:sharpness",
+          "level": 5
+        },
+        {
+          "name": "minecraft:fire_aspect",
+          "level": 2
+        },
+        {
+          "name": "minecraft:unbreaking",
+          "level": 3
+        }
+      ],
+      "attributes": [
+        {
+          "name": "minecraft:generic.attack_damage",
+          "amount": 12.0,
+          "operation": "add",
+          "slot": "mainhand"
+        },
+        {
+          "name": "minecraft:generic.attack_speed",
+          "amount": -0.3,
+          "operation": "add",
+          "slot": "mainhand"
+        }
+      ],
+      "enchantEffect": true,
+      "unbreakable": true,
+      "customModelData": 1234,
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": true,
+      "broadcastGlobal": "&6[Crate] &e%player% &7won &6%prizes% &7from &b%cratename%&7!",
+      "broadcastPlayer": "&aYou opened &b%cratename% &aand received &6%prizes%&a!"
+    },
+    {
+      "type": "item",
+      "weight": 15.0,
+      "material": "minecraft:diamond_helmet",
+      "amount": 1,
+      "displayname": "&9Arcane Helmet",
+      "lore": [
+        "&7Infused with mystical energy"
+      ],
+      "enchants": [
+        {
+          "name": "minecraft:protection",
+          "level": 4
+        },
+        {
+          "name": "minecraft:respiration",
+          "level": 3
+        }
+      ],
+      "attributes": [
+        {
+          "name": "minecraft:generic.armor",
+          "amount": 3.0,
+          "operation": "add",
+          "slot": "head"
+        },
+        {
+          "name": "minecraft:generic.armor_toughness",
+          "amount": 2.0,
+          "operation": "add",
+          "slot": "head"
+        }
+      ],
+      "enchantEffect": true,
+      "unbreakable": true,
+      "customModelData": 5678,
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": true,
+      "broadcastGlobal": "&6[Crate] &e%player% &7won &6%prizes% &7from &b%cratename%&7!",
+      "broadcastPlayer": "&aYou opened &b%cratename% &aand received &6%prizes%&a!"
+    },
+    {
+      "type": "item",
+      "weight": 25.0,
+      "material": "minecraft:enchanted_golden_apple",
+      "amount": 2,
+      "displayname": "&6Divine Golden Apple",
+      "lore": [
+        "&7Blessed by the gods"
+      ],
+      "enchantEffect": true,
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": true,
+      "broadcastGlobal": "&6[Crate] &e%player% &7won &6%prizes% &7from &b%cratename%&7!",
+      "broadcastPlayer": "&aYou opened &b%cratename% &aand received &6%prizes%&a!"
+    },
+    {
+      "type": "command",
+      "weight": 25.0,
+      "command": "give %player% minecraft:diamond 10",
+      "displayItem": {
+        "material": "minecraft:diamond",
+        "amount": 10,
+        "displayname": "&bDiamond Bonus",
+        "lore": [
+          "&7Receive 10 Diamonds instantly!"
+        ],
+        "enchantEffect": false,
+        "customModelData": 4321
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": true,
+      "broadcastGlobal": "&6[Crate] &e%player% &7won &6%prizes% &7from &b%cratename%&7!",
+      "broadcastPlayer": "&aYou opened &b%cratename% &aand received &6%prizes%&a!"
+    },
+    {
+      "type": "command",
+      "weight": 15.0,
+      "command": "give %player% minecraft:experience_bottle 32",
+      "displayItem": {
+        "material": "minecraft:experience_bottle",
+        "amount": 1,
+        "displayname": "&aXP Boost",
+        "lore": [
+          "&7Gain 32 XP bottles instantly!"
+        ],
+        "enchantEffect": true,
+        "customModelData": 6789
+      },
+      "messageGlobal": true,
+      "messagePlayer": true,
+      "messageCustom": true,
+      "broadcastGlobal": "&6[Crate] &e%player% &7won &6%prizes% &7from &b%cratename%&7!",
+      "broadcastPlayer": "&aYou opened &b%cratename% &aand received &6%prizes%&a!"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+---@meta
+--- Represents a player entity in the game, inheriting from LivingEntity and adding player-specific attributes and actions.
+---@class Player : LivingEntity
+---@field blockInteractionRange number The maximum distance at which the player can interact with blocks.
+---@field gamemode string The player's current game mode (e.g., "survival", "creative").
+---@field mainHandItem Item|nil A reference of the item currently held in the player's main hand, or `nil` if the hand is empty.
+---@field permissionLevel number @Read-Only The player's permission level, typically between 0 and 4. A value of 0 means no special permissions.
+---@field inventory PlayerInventory @Read-Only A reference to the player’s inventory.
+Player = {}
+
+--- Teleports the player to a specified location in the given world.
+--- If `yaw` or `pitch` are not provided, the player's current rotation is used.
+---
+--- ### Example: Teleport with direction
+--- ```lua
+--- local player = spell.owner
+--- local destination = Vec3:new(100, 64, 100)
+--- player:teleport(player.world, destination, 90, 45)  -- Teleports the player facing west and looking slightly down
+--- ```
+---
+--- ### Example: Teleport using current rotation
+--- ```lua
+--- player:teleport(player.world, destination)  -- Teleports the player with current yaw and pitch
+--- ```
+---@param world World The world to teleport the player to.
+---@param pos Vec3 The target position.
+---@param yaw number|nil Optional yaw angle in degrees. Defaults to the player’s current yaw.
+---@param pitch number|nil Optional pitch angle in degrees. Defaults to the player’s current pitch.
+---@return Player player A reference to the player after teleportation.
+function Player:teleport(world, pos, yaw, pitch) end
+
+--- Sends the current command tree to the player's Minecraft client.
+---
+--- This forces the Minecraft command system (Brigadier) to rebuild and send
+--- the player's available command tree. It is useful when command permissions have changed,
+--- particularly for dynamic commands or custom permission checks.
+---
+--- A common use case is when a custom Lua interceptor of the `PermissionCheckEvent`
+--- modifies permission results for specific commands, and the players should immediately
+--- see the updated list of accessible commands in their client.
+---
+--- ### Example: Custom permission checker spell
+--- ```lua
+--- spell:intercept({"PermissionCheckEvent"}, function(event)
+---   if instanceOf(Player, event.entity) and event.permission == "my.custom.command" then
+---     event.allowed = true
+---     return false  -- cancel default handling, our interceptor provides the decision
+---   end
+---   return true
+--- end)
+---
+--- -- Refresh the command tree for all online players
+--- for _, player in ipairs(Server.players) do
+---   ---@cast player Player
+---   player:sendCommandTree()
+--- end
+---
+--- -- Keep the spell alive so the interceptor stays active
+--- while true do sleep(20) end
+--- ```
+function Player:sendCommandTree() end
+

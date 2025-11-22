@@ -1,0 +1,40 @@
+---@meta
+--- Represents a captured box-shaped region of the world with its own internal coordinate system.
+---
+--- **Coordinate system:**
+--- - When created, the block in the copied region with the smallest x, y, and z values becomes the structure’s **origin**.
+--- - This origin is mapped to (0, 0, 0) in the structure’s local coordinates.
+--- - All other blocks have non-negative local coordinates relative to this origin.
+--- - The `size` property gives the dimensions (all values ≥ 1).
+---
+--- **Standard usage:**  
+--- Use structures to capture, store, and reuse any part of the world.
+--- - Create with `spell:copyStructure`.
+--- - Save to disk with `server:saveStructure` using any custom name (for example, `"mickkay/mystruct01"`).
+--- - Load later with `server:loadStructure`.
+---
+--- ### Example: Save and load your own structure
+--- ```lua
+--- local struct = spell:copyStructure(spell.pos + Vec3(10, 8, 10))
+--- spell.server:saveStructure("mickkay/mystruct01", struct)
+--- -- Later, or in another spell:
+--- local loaded = spell.server:loadStructure("mickkay/mystruct01")
+--- spell:pasteStructure(loaded)
+--- ```
+---
+--- **Advanced usage: Overriding vanilla structures**
+--- You can override Minecraft’s built-in structures by saving your own under a built-in name (for example, `"minecraft:igloo/top"`).
+--- - When Minecraft generates that structure, it will use your version instead of the default.
+--- - When loading, if a custom file exists, it is used; if not, the built-in version is loaded.
+---
+--- ### Example: Override a vanilla structure
+--- ```lua
+--- -- Replace the top part of igloos with your custom structure
+--- local struct = spell:copyStructure(spell.pos + Vec3(7, 7, 7))
+--- spell.server:saveStructure("minecraft:igloo/top", struct)
+--- ```
+---@class Structure
+---@field size Vec3 @Read-Only The dimensions of the structure (width, height, depth).
+---@field author string @Read-Only The name of the entity that created this structure.
+---@field nbt table @Read-Only The NBT (Named Binary Tag) data for the structure.
+Structure = {}

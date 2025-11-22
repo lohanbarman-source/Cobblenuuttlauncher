@@ -1,0 +1,23 @@
+[
+  {
+    "dimension": "minecraft:overworld",
+    "x": -16,
+    "y": 71,
+    "z": -109,
+    "crateName": "vote"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -14,
+    "y": 71,
+    "z": -109,
+    "crateName": "evoli"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -12,
+    "y": 71,
+    "z": -109,
+    "crateName": "noctali"
+  }
+]

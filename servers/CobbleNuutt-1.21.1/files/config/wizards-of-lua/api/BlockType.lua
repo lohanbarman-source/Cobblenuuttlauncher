@@ -1,0 +1,14 @@
+---@meta
+--- Represents the type of a block, including its unique identifier and name.
+---
+--- ### Example: Comparing BlockType with a String Identifier
+--- ```lua
+--- local block = someSpell.block  -- Get the block at a certain position
+--- if block.type.id == "dirt" then
+---     print("This block is dirt!")
+--- end
+--- ```
+---@class BlockType
+---@field id string @Read-Only The unique identifier for the block type (e.g., "stone", "dirt").
+---@field name string @Read-Only The human-readable name of the block type.
+BlockType = {}

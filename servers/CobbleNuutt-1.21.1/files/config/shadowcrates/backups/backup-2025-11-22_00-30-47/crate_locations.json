@@ -1,0 +1,51 @@
+[
+  {
+    "dimension": "minecraft:overworld",
+    "x": -16,
+    "y": 71,
+    "z": -109,
+    "crateName": "vote"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -14,
+    "y": 71,
+    "z": -109,
+    "crateName": "evoli"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -12,
+    "y": 71,
+    "z": -109,
+    "crateName": "noctali"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -75,
+    "y": 76,
+    "z": 105,
+    "crateName": "vote"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -78,
+    "y": 76,
+    "z": 109,
+    "crateName": "shiny"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -78,
+    "y": 76,
+    "z": 95,
+    "crateName": "noctali"
+  },
+  {
+    "dimension": "minecraft:overworld",
+    "x": -75,
+    "y": 76,
+    "z": 99,
+    "crateName": "evoli"
+  }
+]

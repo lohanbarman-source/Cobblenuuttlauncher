@@ -1,0 +1,20 @@
+---@meta
+--- Represents an event that occurs after a living entity has died, detailing the entity and the cause of death.
+--- This event cannot be canceled.
+---
+--- ### Example
+--- ```lua
+--- local deathQueue = spell:collect("AfterLivingEntityDeathEvent")
+--- while true do
+---     local evt = deathQueue:next()
+---     --- @cast evt AfterLivingEntityDeathEvent
+---     local dead = evt.entity
+---     spell.pos = dead.pos
+---     spell:execute("/particle minecraft:cherry_leaves ~ ~ ~ 0.2 1 0.2 1 100")
+--- end
+--- ```
+---@class AfterLivingEntityDeathEvent
+---@field name string @Read-Only The name of the event.
+---@field entity Entity @Read-Only A reference to the entity that has died.
+---@field damageSource DamageSource @Read-Only The source of damage that caused the entity's death.
+AfterLivingEntityDeathEvent = {}

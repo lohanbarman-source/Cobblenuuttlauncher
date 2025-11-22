@@ -1,0 +1,22 @@
+{
+  "port": 8080,
+  "updateIntervalMinutes": 5,
+  "imageTitle": "Scoreboard - Pokémon Capturés",
+  "timeZone": "Europe/Paris",
+  "autoDetectDataFolder": true,
+  "manualDataFolderPath": "",
+  "maxPlayers": 100,
+  "rowsPerColumn": 10,
+  "showLastUpdate": true,
+  "colors": {
+    "footerText": "#FFFF00",
+    "firstPlaceBackground": "#FFD700",
+    "secondPlaceBackground": "#C0C0C0",
+    "text": "#FFFFFF",
+    "background": "#141414",
+    "titleBackground": "#3232C8",
+    "topPlayerText": "#FFFFFF",
+    "thirdPlaceBackground": "#CD7F32",
+    "titleText": "#FFFFFF"
+  }
+}

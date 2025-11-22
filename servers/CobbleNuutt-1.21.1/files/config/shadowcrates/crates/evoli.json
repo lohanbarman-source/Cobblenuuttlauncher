@@ -1,0 +1,565 @@
+{
+  "crateID": "evoli",
+  "screenName": "&c✨ CAISSE ÉVOLI ✨",
+  "crateName": "&c✨ CAISSE ÉVOLI ✨",
+  "permission": "crate.evoli",
+  "openSound": "minecraft:block.amethyst_block.hit",
+  "rewardSound": "minecraft:entity.experience_orb.pickup",
+  "movingItemSound": "minecraft:block.amethyst_cluster.break",
+  "particleType": "minecraft:end_rod",
+  "animationType": "default",
+  "animationSteps": 5,
+  "animationInterval": 100,
+  "keyItem": {
+    "isVirtualKey": false,
+    "material": "minecraft:nether_star",
+    "customModelData": 105,
+    "amount": 1,
+    "displayname": "&aClé Évoli",
+    "lore": [
+      "&7Cette clé te permet d'ouvrir la &c✨ CAISSE ÉVOLI ✨"
+    ],
+    "enchantEffect": false
+  },
+  "prizes": [
+    {
+      "type": "command",
+      "weight": 10.0,
+      "command": "minecraft:give %player% cobblemon:ultra_ball 64",
+      "displayItem": {
+        "material": "cobblemon:ultra_ball",
+        "amount": 64,
+        "displayname": "&eHyper Balls ×64",
+        "lore": [
+          "&7Haute performance pour les captures difficiles."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 9.0,
+      "command": "minecraft:give %player% cobblemon:hp_up 32",
+      "displayItem": {
+        "material": "cobblemon:hp_up",
+        "amount": 32,
+        "displayname": "&cHP Up ×32",
+        "lore": [
+          "&7Augmente les PV de base d’un Pokémon."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 9.0,
+      "command": "minecraft:give %player% cobblemon:protein 32",
+      "displayItem": {
+        "material": "cobblemon:protein",
+        "amount": 32,
+        "displayname": "&6Protein ×32",
+        "lore": [
+          "&7Augmente l’attaque de base d’un Pokémon."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 9.0,
+      "command": "minecraft:give %player% cobblemon:iron 32",
+      "displayItem": {
+        "material": "cobblemon:iron",
+        "amount": 32,
+        "displayname": "&7Iron ×32",
+        "lore": [
+          "&7Renforce la défense d’un Pokémon."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 9.0,
+      "command": "minecraft:give %player% cobblemon:calcium 32",
+      "displayItem": {
+        "material": "cobblemon:calcium",
+        "amount": 32,
+        "displayname": "&eCalcium ×32",
+        "lore": [
+          "&7Améliore l’attaque spéciale d’un Pokémon."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 9.0,
+      "command": "minecraft:give %player% cobblemon:zinc 32",
+      "displayItem": {
+        "material": "cobblemon:zinc",
+        "amount": 32,
+        "displayname": "&bZinc ×32",
+        "lore": [
+          "&7Renforce la défense spéciale."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 9.0,
+      "command": "minecraft:give %player% cobblemon:carbos 32",
+      "displayItem": {
+        "material": "cobblemon:carbos",
+        "amount": 32,
+        "displayname": "&aCarbos ×32",
+        "lore": [
+          "&7Augmente la vitesse de base d’un Pokémon."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 8.0,
+      "command": "minecraft:give %player% cobblemon:pp_up 24",
+      "displayItem": {
+        "material": "cobblemon:pp_up",
+        "amount": 24,
+        "displayname": "&dPP Up ×24",
+        "lore": [
+          "&7Augmente le nombre d’utilisations d’une capacité."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 6.0,
+      "command": "cd give %player% 3000",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+3000 CobbleDollars",
+        "lore": [
+          "&7Tu reçois 3000 CobbleDollars !",
+          "&eMonnaie utilisable dans la boutique du serveur."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7vient de gagner &a500 CobbleDollars &7dans &d%cratename%&7 !"
+    },
+    {
+      "type": "command",
+      "weight": 6.0,
+      "command": "cd give %player% 5000",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+5000 CobbleDollars",
+        "lore": [
+          "&7Tu reçois 5000 CobbleDollars !",
+          "&eMonnaie utilisable dans la boutique du serveur."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7vient de gagner &a5000 CobbleDollars &7dans &d%cratename%&7 !"
+    },
+    {
+      "type": "command",
+      "weight": 6.0,
+      "command": "cd give %player% 7500",
+      "displayItem": {
+        "material": "cobblemon:relic_coin",
+        "amount": 1,
+        "displayname": "&a+7500 CobbleDollars",
+        "lore": [
+          "&7Tu reçois 7500 CobbleDollars !",
+          "&eMonnaie utilisable dans la boutique du serveur."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7vient de gagner &a5000 CobbleDollars &7dans &d%cratename%&7 !"
+    },
+    {
+      "type": "command",
+      "weight": 5.9,
+      "command": "minecraft:give %player% cobblemon:exp_candy_l 48",
+      "displayItem": {
+        "material": "cobblemon:exp_candy_l",
+        "amount": 48,
+        "displayname": "&bBonbons Exp. L ×48",
+        "lore": [
+          "&7Boost d'expérience correct pour l'équipe."
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 5.9,
+      "command": "minecraft:give %player% cobblemon:exp_candy_xl 24",
+      "displayItem": {
+        "material": "cobblemon:exp_candy_xl",
+        "amount": 24,
+        "displayname": "&bBonbons Exp. XL ×24",
+        "lore": [
+          "&7Gros boost d'XP — rare en Vote Crate."
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 5.9,
+      "command": "minecraft:give %player% cobblemon:rare_candy 32",
+      "displayItem": {
+        "material": "cobblemon:rare_candy",
+        "amount": 32,
+        "displayname": "&dSuperBonbons ×32",
+        "lore": [
+          "&7+10 niveaux instantanés au total. Énorme !"
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false,
+      "broadcastGlobal": "&6[Crate] &e%player% &7won &6%prizes% &7from &b%cratename%&7!",
+      "broadcastPlayer": "&aYou opened &b%cratename% &aand received &6%prizes%&a!"
+    },
+    {
+      "type": "command",
+      "weight": 5.0,
+      "command": "minecraft:give %player% cobblemon:destiny_knot 1",
+      "displayItem": {
+        "material": "cobblemon:destiny_knot",
+        "amount": 1,
+        "displayname": "&9Noeud Destin ! x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 4.0,
+      "command": "minecraft:give %player% cobblemon:ability_patch 2",
+      "displayItem": {
+        "material": "cobblemon:ability_patch",
+        "amount": 2,
+        "displayname": "&aAbility Patch ×2",
+        "lore": [
+          "&7Change le talent du pokémon"
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% gachamachine:gacha_coin 30",
+      "displayItem": {
+        "material": "gachamachine:gacha_coin",
+        "amount": 30,
+        "displayname": "&6Gacha Coin ×30",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:n_solarizer 1",
+      "displayItem": {
+        "material": "mega_showdown:n_solarizer",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:n_lunarizer 1",
+      "displayItem": {
+        "material": "mega_showdown:n_lunarizer",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:prison_bottle 1",
+      "displayItem": {
+        "material": "mega_showdown:prison_bottle",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:reins_of_unity 1",
+      "displayItem": {
+        "material": "mega_showdown:reins_of_unity",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:adamant_crystal 1",
+      "displayItem": {
+        "material": "mega_showdown:adamant_crystal",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:lustrous_globe 1",
+      "displayItem": {
+        "material": "mega_showdown:lustrous_globe",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:griseous_core 1",
+      "displayItem": {
+        "material": "mega_showdown:griseous_core",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:dna_splicer 1",
+      "displayItem": {
+        "material": "mega_showdown:dna_splicer",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 3.0,
+      "command": "minecraft:give %player% mega_showdown:gracidea_flower 1",
+      "displayItem": {
+        "material": "mega_showdown:gracidea_flower",
+        "amount": 1,
+        "displayname": "&6Item changement de forme x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 2.5,
+      "command": "give %player% gachamachine:gacha_coin_10 10",
+      "displayItem": {
+        "material": "gachamachine:gacha_coin_10",
+        "amount": 10,
+        "displayname": "&6Gacha Coin ×10",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": true
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 2.25,
+      "command": "minecraft:give %player% cobblemon:master_ball 1",
+      "displayItem": {
+        "material": "cobblemon:master_ball",
+        "amount": 1,
+        "displayname": "&9Master ball ! x1",
+        "lore": [
+          ""
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 1.62,
+      "command": "crate key give evoli 2 %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 2,
+        "displayname": "Clé Évoli x2",
+        "lore": [
+          "",
+          ""
+        ],
+        "enchantEffect": true,
+        "customModelData": 105
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 1.62,
+      "command": "crate key give noctali 1 %player%",
+      "displayItem": {
+        "material": "minecraft:nether_star",
+        "amount": 1,
+        "displayname": "Clé Noctali x1",
+        "lore": [
+          "",
+          ""
+        ],
+        "enchantEffect": true,
+        "customModelData": 106
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    },
+    {
+      "type": "command",
+      "weight": 1.2,
+      "command": "minecraft:give %player% cobblemon_utility:shinycard 1",
+      "displayItem": {
+        "material": "cobblemon_utility:shinycard",
+        "amount": 1,
+        "displayname": "&aShiny Card ×1",
+        "lore": [
+          "&7Change ton pokémon en Shiny"
+        ],
+        "enchantEffect": false
+      },
+      "messageGlobal": false,
+      "messagePlayer": false,
+      "messageCustom": false
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+---@meta
+--- Provides access to the global Wizards of Lua mod configuration, including dynamic command management at runtime.
+--- These settings reflect the default values at server startup. All values are reset to their default value when the 
+--- server is restarted or when `/wol startup` is executed.
+--- To customize them, use a `startup.lua` script. This script runs during the server's initialization phase and allows programmatic configuration of global settings. 
+---
+--- ### Example: Set log output to the console during startup
+--- ```lua
+--- WizardsOfLua.log = "console"
+--- ```
+---@module 'WizardsOfLua'
+---@class WizardsOfLua
+---@field version string @Read-Only The version of the installed Wizards of Lua mod.
+---@field log string Controls where `log(...)` outputs are sent. Valid options are:
+--- - `"source"`: Output is sent to the spell's command source.
+--- - `"operators"`: Output is broadcast to all server operators.
+--- - `"console"`: Output is printed to the Minecraft server console.
+--- - `"none"`: Output is discarded.
+WizardsOfLua = {}
+
+--- Registers a new dynamic command.
+---  
+--- The `command` table must contain:
+---  - `id` (string): unique identifier (and permission node).  
+---  - `level` (number|nil): required operator level (0–4). Default is 0.  
+---  - `pattern` (string): command syntax with `%`-placeholders.  
+---  - `code` (string): Lua snippet to run when invoked.  
+---  
+--- Note: Dynamic commands are available only at the end of the current server tick. Yield one tick (e.g. `sleep(1)`) before invoking a newly registered command.
+---
+--- ### Example  
+--- ```lua
+--- local ok = WizardsOfLua.setCommand( {
+---   id      = "coins.add",
+---   level   = 0,
+---   pattern = "coins add amount:%i to list:%players",
+---   code    = [[ 
+---     for i,e in ipairs(args.list) do
+---       local c = e.extra.coins or 0
+---       c = c + args.amount
+---       e:putExtra({coins=c})
+---       print(e.name.." has now "..c.." coins.")
+---     end
+---   ]]
+--- })
+--- ```
+---@param command table A spec table as described above.
+---@return boolean success `true` if registration succeeded, `false` on failure.
+function WizardsOfLua.setCommand(command) end
+
+--- Unregisters a previously registered dynamic command.
+---
+--- Removes the dynamic command with the given `id` that was added via `WizardsOfLua.setCommand`.
+---
+--- ### Example
+--- ```lua
+--- local removed = WizardsOfLua.removeCommand("my.cmd")
+--- if not removed then
+---   print("No such dynamic command: my.cmd")
+--- end
+--- ```
+---@param id string The id of the dynamic command to remove
+---@return boolean success `true` if the command existed and was unregistered; `false` otherwise
+function WizardsOfLua.removeCommand(id) end
+
+--- Lists all currently registered dynamic commands with their specs and code.
+---
+--- Returns an array of tables `{ id=…, level=…, pattern=…, code=… }`, so you can
+--- iterate and display them in Lua.
+---
+--- ### Example
+--- ```lua
+--- local all = WizardsOfLua.listCommands()
+--- for i, cmd in ipairs(all) do
+---   print(i, cmd.id, "→", cmd.pattern, "(level " .. cmd.level .. ")")  
+--- end
+--- ```
+---@return {id:string, level:number, pattern:string, code:string}[] list A list of all dynamic command definitions
+function WizardsOfLua.listCommands() end

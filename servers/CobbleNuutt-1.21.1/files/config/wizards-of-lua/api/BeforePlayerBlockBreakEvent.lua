@@ -1,0 +1,11 @@
+---@meta
+--- Represents an event that occurs before a player breaks a block, allowing inspection or interception of the action.
+--- This event can be canceled to prevent the block from being broken.
+---@class BeforePlayerBlockBreakEvent
+---@field name string @Read-Only The name of the event.
+---@field world World @Read-Only A reference to the world in which the block break attempt is occurring.
+---@field player Player @Read-Only A reference to the player attempting to break the block.
+---@field pos Vec3 @Read-Only A copy of the position of the block being targeted for breaking.
+---@field block Block @Read-Only A copy of the block that is being targeted for breaking.
+---@field blockEntity BlockEntity @Read-Only A reference to the block entity associated with the block, if applicable.
+BeforePlayerBlockBreakEvent = {}

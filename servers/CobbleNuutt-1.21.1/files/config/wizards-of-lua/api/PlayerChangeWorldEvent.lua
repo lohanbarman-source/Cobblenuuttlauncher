@@ -1,0 +1,20 @@
+---@meta
+--- Triggered whenever a player is moved to a different world.
+--- This event cannot be canceled.
+---
+--- When this event is fired, the player has already been teleported to the destination world.
+---
+--- ### Example
+--- ```lua
+--- local queue = spell:collect("PlayerChangeWorldEvent")
+--- while true do
+---   local evt = queue:next() ---@cast evt PlayerChangeWorldEvent
+---   print("Player " .. evt.player.name .. " just entered " .. evt.destination.dimension)
+--- end
+--- ```
+---@class PlayerChangeWorldEvent
+---@field name string @Read-Only The name of this event.
+---@field player Player @Read-Only A reference to the player who changed worlds.
+---@field origin World @Read-Only A reference to the world the player left.
+---@field destination World @Read-Only A reference to the world the player entered.
+PlayerChangeWorldEvent = {}

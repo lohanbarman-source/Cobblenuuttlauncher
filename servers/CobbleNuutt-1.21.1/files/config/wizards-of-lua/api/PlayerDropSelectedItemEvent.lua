@@ -1,0 +1,21 @@
+---@meta
+--- Triggered when a player drops the selected item.
+--- This event provides access to the player and a copy of the selected item being dropped.
+--- This event can be canceled.
+---
+--- ### Example
+--- ```lua
+--- spell:intercept({"PlayerDropSelectedItemEvent"}, function(evt)
+---   ---@cast evt PlayerDropSelectedItemEvent
+---   if evt.item.type.id == "minecraft:diamond_sword" then
+---     return false
+---   end
+--- end)
+--- while true do sleep(10) end
+--- ```
+---@class PlayerDropSelectedItemEvent
+---@field name string @Read-Only The name of the event.
+---@field player Player @Read-Only A reference to the player who is dropping the item.
+---@field item Item @Read-Only A reference to the item entity that is about to be dropped by the player.
+---@field entireStack boolean @Read-Only Indicates if the entire stack will be dropped of just one single item.
+PlayerDropSelectedItemEvent = {}
