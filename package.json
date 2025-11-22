@@ -1,6 +1,6 @@
 {
   "name": "cobblenuuttlauncher",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "productName": "CobbleNuutt Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "Daniel Scalzi (https://github.com/dscalzi/) & Delta art (https://github.com/Deltaartsstudio/)",
@@ -49,6 +49,7 @@
     "url": "git+https://github.com/Deltaartsstudio/cobblenuuttLauncher.git"
   }
 }
+
 
 
 
