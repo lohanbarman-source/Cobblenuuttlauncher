@@ -11098,14 +11098,14 @@
           }
         },
         {
-          "id": "Nuutt_GUI v1.0.zip",
-          "name": "Nuutt_GUI v1.0.zip",
+          "id": "Nuutt_GUI_v1.0.zip",
+          "name": "Nuutt_GUI_v1.0.zip",
           "type": "File",
           "artifact": {
             "size": 205764195,
-            "url": "https://raw.githubusercontent.com/lohanbarman-source/Cobblenuuttlauncher/main/servers/CobbleNuutt-1.21.1/files/resourcepacks/Nuutt_GUI%20v1.0.zip",
+            "url": "https://raw.githubusercontent.com/lohanbarman-source/Cobblenuuttlauncher/main/servers/CobbleNuutt-1.21.1/files/resourcepacks/Nuutt_GUI_v1.0.zip",
             "MD5": "1af862e93df733c955d2d93510b23181",
-            "path": "resourcepacks/Nuutt_GUI v1.0.zip"
+            "path": "resourcepacks/Nuutt_GUI_v1.0.zip"
           }
         },
         {
